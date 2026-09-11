@@ -1,0 +1,2 @@
+class PermanentInstructor extends Instructor {
+}

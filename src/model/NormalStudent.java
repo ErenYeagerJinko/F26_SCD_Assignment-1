@@ -1,0 +1,2 @@
+class NormalStudent extends Student {
+}

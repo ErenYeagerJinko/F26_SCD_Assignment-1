@@ -1,0 +1,2 @@
+class VisitingInstructor extends Instructor {
+}

@@ -1,0 +1,2 @@
+class AcademicOfficeAdmin extends Administrator {
+}
