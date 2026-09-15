@@ -1,2 +1,3 @@
-class Evaluator {
+abstract interface Evaluator {
+    public void evaluate();
 }
