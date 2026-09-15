@@ -9,12 +9,6 @@ abstract class Person {
         this.phone = phone;
     }
 
-    public Person() {
-        this.name = "";
-        this.email = "";
-        this.phone = "";
-    }
-
     public String getName() {
         return name;
     }
