@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-class NormalStudent extends Student {
-=======
 package model;
 
 public class NormalStudent extends Student {
@@ -12,5 +9,4 @@ public class NormalStudent extends Student {
     public String getRole() {
         return "Normal Student";
     }
->>>>>>> Stashed changes
 }

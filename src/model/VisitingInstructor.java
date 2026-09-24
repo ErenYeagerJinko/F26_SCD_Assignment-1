@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-class VisitingInstructor extends Instructor {
-=======
 package model;
 
 public class VisitingInstructor extends Instructor {
@@ -12,5 +9,4 @@ public class VisitingInstructor extends Instructor {
     public String getRole() {
         return "Visiting Instructor";
     }
->>>>>>> Stashed changes
 }

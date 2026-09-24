@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-abstract class Administrator extends Person {
-=======
 package model;
 
 public abstract class Administrator extends Person {
@@ -18,5 +15,4 @@ public abstract class Administrator extends Person {
     public void setAdminId(String adminId) {
         this.adminId = adminId;
     }
->>>>>>> Stashed changes
 }
