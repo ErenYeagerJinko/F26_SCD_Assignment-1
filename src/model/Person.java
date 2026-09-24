@@ -1,4 +1,6 @@
-abstract class Person {
+package model;
+
+public abstract class Person {
     private String name;
     private String email;
     private String phone;
@@ -32,4 +34,6 @@ abstract class Person {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    public abstract String getRole();
 }
