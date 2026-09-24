@@ -1,3 +1,5 @@
-abstract interface Evaluator {
-    public void evaluate();
+package model;
+
+public interface Evaluator {
+    void evaluate();
 }
