@@ -1,4 +1,8 @@
+package model;
+
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 abstract class Assessment {
     private String id;
@@ -6,6 +10,7 @@ abstract class Assessment {
     private String description;
     private LocalDate deadline;
     private double totalMarks;
+    private List<Submission> submissions;
 
     public Assessment(String id, String title, String description, LocalDate deadline, double totalMarks) {
         this.id = id;
@@ -13,6 +18,7 @@ abstract class Assessment {
         this.description = description;
         this.deadline = deadline;
         this.totalMarks = totalMarks;
+        this.submissions = new ArrayList<>();
     }
 
     public String getId() { return id; }
@@ -20,4 +26,5 @@ abstract class Assessment {
     public String getDescription() { return description; }
     public LocalDate getDeadline() { return deadline; }
     public double getTotalMarks() { return totalMarks; }
+    public List<Submission> getSubmissions() { return submissions; }
 }

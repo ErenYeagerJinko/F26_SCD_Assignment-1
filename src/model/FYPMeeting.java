@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 class FYPMeeting {
@@ -17,4 +19,5 @@ class FYPMeeting {
     public LocalDate getMeetingDate() { return meetingDate; }
     public String getAgenda() { return agenda; }
     public String getNotes() { return notes; }
+    public void setNotes(String notes) { this.notes = notes; }
 }

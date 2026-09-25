@@ -1,3 +1,5 @@
+package comparators;
+
 import java.util.Comparator;
 
 class FYPMeetingDateComparator implements Comparator<FYPMeeting> {
