@@ -1,5 +1,7 @@
-class CourseFullException extends CourseException {
-    CourseFullException(String message) {
+package exceptions;
+
+public class CourseFullException extends CourseException {
+    public CourseFullException(String message) {
         super(message);
     }
 }

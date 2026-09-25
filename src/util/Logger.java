@@ -1,43 +1,49 @@
 package util;
 
 import java.io.*;
-import java.util.logging.*;
+import java.time.*;
+import java.time.format.*;
 
 public class Logger {
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger("CampusManagementSystem");
-    private static FileHandler fileHandler;
+    private static final String LOG_FILE = "logs/logs.log";
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     static {
+        File logsDir = new File("logs");
+        if (!logsDir.exists()) {
+            logsDir.mkdirs();
+        }
+    }
+
+    public static synchronized void log(String level, String message) {
         try {
             File logsDir = new File("logs");
             if (!logsDir.exists()) {
                 logsDir.mkdirs();
             }
-            fileHandler = new FileHandler("logs/app.log", true);
-            fileHandler.setFormatter(new SimpleFormatter());
-            logger.addHandler(fileHandler);
-        } catch (IOException e) {
-            System.err.println("Failed to initialize Logger FileHandler: " + e.getMessage());
+            try (FileWriter writer = new FileWriter(LOG_FILE, true)) {
+                String timestamp = LocalDateTime.now().format(FORMATTER);
+                String tag = (level != null && !level.trim().isEmpty()) ? level.trim().toUpperCase() : "INFO";
+                writer.write("[" + tag + "] " + timestamp + " - " + message + "\n");
+            }
+        } catch (Exception e) {
+            System.err.println("Logging failed: " + e.getMessage());
         }
     }
 
     public static void info(String message) {
-        logger.info(message);
+        log("INFO", message);
     }
 
     public static void warning(String message) {
-        logger.warning(message);
+        log("WARNING", message);
     }
 
     public static void severe(String message) {
-        logger.severe(message);
+        log("SEVERE", message);
     }
 
     public static void error(String message) {
-        logger.severe(message);
-    }
-
-    public static void log(Level level, String message) {
-        logger.log(level, message);
+        log("ERROR", message);
     }
 }

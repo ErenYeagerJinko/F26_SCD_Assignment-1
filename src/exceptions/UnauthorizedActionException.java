@@ -1,5 +1,7 @@
-class UnauthorizedActionException extends UserException {
-    UnauthorizedActionException(String message) {
+package exceptions;
+
+public class UnauthorizedActionException extends UserException {
+    public UnauthorizedActionException(String message) {
         super(message);
     }
 }

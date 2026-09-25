@@ -1,5 +1,7 @@
-abstract class RequestException extends CampusException {
-    RequestException(String message) {
+package exceptions;
+
+public abstract class RequestException extends CampusException {
+    public RequestException(String message) {
         super(message);
     }
 }
