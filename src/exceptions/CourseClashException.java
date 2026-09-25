@@ -1,5 +1,7 @@
-class CourseClashException extends CourseException {
-    CourseClashException(String message) {
+package exceptions;
+
+public class CourseClashException extends CourseException {
+    public CourseClashException(String message) {
         super(message);
     }
 }
