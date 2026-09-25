@@ -1,3 +1,5 @@
+package comparators;
+
 import java.util.Comparator;
 
 class StudentNameComparator implements Comparator<Student> {

@@ -1,3 +1,5 @@
+package comparators;
+
 import java.util.Comparator;
 
 class RequestPriorityComparator implements Comparator<Request> {
