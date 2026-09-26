@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class Assessment {
+public abstract class Assessment {
     private String id;
     private String title;
     private String description;

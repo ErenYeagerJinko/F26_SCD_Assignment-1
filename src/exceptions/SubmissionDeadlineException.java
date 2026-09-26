@@ -1,7 +1,7 @@
 package exceptions;
 
-class SubmissionDeadlineException extends AssessmentException {
-    SubmissionDeadlineException(String message) {
+public class SubmissionDeadlineException extends AssessmentException {
+    public SubmissionDeadlineException(String message) {
         super(message);
     }
 }

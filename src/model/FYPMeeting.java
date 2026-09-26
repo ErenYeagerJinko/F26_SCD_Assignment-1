@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-class FYPMeeting {
+public class FYPMeeting {
     private String meetingId;
     private LocalDate meetingDate;
     private String agenda;

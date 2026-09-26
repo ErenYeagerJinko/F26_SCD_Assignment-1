@@ -1,6 +1,7 @@
 package comparators;
 
 import java.util.Comparator;
+import model.FYPMeeting;
 
 class FYPMeetingDateComparator implements Comparator<FYPMeeting> {
     @Override

@@ -2,11 +2,17 @@ package model;
 
 import java.time.LocalDate;
 
-class Feedback {
+public class Feedback {
     private String feedbackId;
     private Evaluator evaluator;
     private String comments;
     private LocalDate date;
+
+    public Feedback(String feedbackId, String comments, LocalDate date) {
+        this.feedbackId = feedbackId;
+        this.comments = comments;
+        this.date = date;
+    }
 
     public String getFeedbackId() { return feedbackId; }
     public void setFeedbackId(String feedbackId) { this.feedbackId = feedbackId; }
