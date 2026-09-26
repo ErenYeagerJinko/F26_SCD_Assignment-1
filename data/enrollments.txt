@@ -1,0 +1,1 @@
+# enrollmentId|studentId|sectionId|enrollmentDate|status

@@ -1,0 +1,3 @@
+# type|requestId|date|description|status|priority|category-or-conflictingSection|requestedSection
+GENERIC|REQ-001|2026-09-10|Classroom projector in C-401 is not working|PENDING|2|OTHER
+CLASH|REQ-002|2026-09-11|Unable to attend overlapping laboratory sessions|PENDING|5|CS101-A|CS201-A
