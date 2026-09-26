@@ -14,4 +14,11 @@ class Assignment extends Assessment {
     public void setSection(Section section) { this.section = section; }
     public TeachingAssistant getCreatedBy() { return createdBy; }
     public void setCreatedBy(TeachingAssistant createdBy) { this.createdBy = createdBy; }
+
+    @Override
+    public void addSubmission(Submission submission) {
+        if (submission != null && submission.getAssignment() == this) {
+            super.addSubmission(submission);
+        }
+    }
 }
