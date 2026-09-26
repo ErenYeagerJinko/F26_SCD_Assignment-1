@@ -1,7 +1,7 @@
 package exceptions;
 
-abstract class FYPException extends CampusException {
-    FYPException(String message) {
+public abstract class FYPException extends CampusException {
+    public FYPException(String message) {
         super(message);
     }
 }

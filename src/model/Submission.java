@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 import enums.SubmissionStatus;
 
-class Submission {
+public class Submission {
     private String submissionId;
     private Assignment assignment;
     private Student student;
@@ -12,6 +12,15 @@ class Submission {
     private double marks;
     private Feedback feedback;
     private SubmissionStatus status;
+
+    public Submission(Assignment assignment, Student student, String content) {
+        this.assignment = assignment;
+        this.student = student;
+        this.content = content;
+        this.submissionDate = LocalDate.now();
+        this.status = SubmissionStatus.PENDING;
+        this.submissionId = "SUB-" + System.currentTimeMillis();
+    }
 
     public String getSubmissionId() { return submissionId; }
     public void setSubmissionId(String submissionId) { this.submissionId = submissionId; }

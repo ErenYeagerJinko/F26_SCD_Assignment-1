@@ -1,6 +1,7 @@
 package comparators;
 
 import java.util.Comparator;
+import model.Assignment;
 
 class AssignmentDeadlineComparator implements Comparator<Assignment> {
     @Override

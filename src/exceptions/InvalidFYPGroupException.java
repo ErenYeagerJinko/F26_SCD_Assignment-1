@@ -1,7 +1,7 @@
 package exceptions;
 
-class InvalidFYPGroupException extends FYPException {
-    InvalidFYPGroupException(String message) {
+public class InvalidFYPGroupException extends FYPException {
+    public InvalidFYPGroupException(String message) {
         super(message);
     }
 }

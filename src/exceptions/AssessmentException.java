@@ -1,7 +1,7 @@
 package exceptions;
 
-abstract class AssessmentException extends CampusException {
-    AssessmentException(String message) {
+public class AssessmentException extends CampusException {
+    public AssessmentException(String message) {
         super(message);
     }
 }

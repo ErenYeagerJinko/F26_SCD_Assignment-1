@@ -2,11 +2,18 @@ package model;
 
 import java.time.LocalDate;
 
-class FYPEvaluation {
+public class FYPEvaluation {
     private String evaluationId;
     private LocalDate evaluationDate;
     private double score;
     private String feedback;
+
+    public FYPEvaluation(String evaluationId, LocalDate evaluationDate, double score, String feedback) {
+        this.evaluationId = evaluationId;
+        this.evaluationDate = evaluationDate;
+        this.score = score;
+        this.feedback = feedback;
+    }
 
     public String getEvaluationId() { return evaluationId; }
     public void setEvaluationId(String evaluationId) { this.evaluationId = evaluationId; }

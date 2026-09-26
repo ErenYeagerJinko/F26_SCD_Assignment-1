@@ -1,6 +1,7 @@
 package comparators;
 
 import java.util.Comparator;
+import model.Student;
 
 class StudentNameComparator implements Comparator<Student> {
     @Override

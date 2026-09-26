@@ -1,7 +1,7 @@
 package exceptions;
 
-class InvalidFYPEvaluationException extends FYPException {
-    InvalidFYPEvaluationException(String message) {
+public class InvalidFYPEvaluationException extends FYPException {
+    public InvalidFYPEvaluationException(String message) {
         super(message);
     }
 }
