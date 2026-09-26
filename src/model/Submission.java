@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import enums.SubmissionStatus;
 
 class Submission {
     private String submissionId;
@@ -28,4 +29,22 @@ class Submission {
     public void setFeedback(Feedback feedback) { this.feedback = feedback; }
     public SubmissionStatus getStatus() { return status; }
     public void setStatus(SubmissionStatus status) { this.status = status; }
+
+    public void submit() {
+        this.submissionDate = LocalDate.now();
+        this.status = SubmissionStatus.SUBMITTED;
+    }
+
+    public boolean isLate() {
+        return assignment != null && submissionDate != null && submissionDate.isAfter(assignment.getDeadline());
+    }
+
+    public void assignMarks(double marks) {
+        this.marks = marks;
+        this.status = SubmissionStatus.EVALUATED;
+    }
+
+    public void addFeedback(Feedback feedback) {
+        this.feedback = feedback;
+    }
 }

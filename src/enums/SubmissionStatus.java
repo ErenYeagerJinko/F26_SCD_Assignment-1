@@ -1,5 +1,5 @@
 package enums;
 
-enum SubmissionStatus {
+public enum SubmissionStatus {
     PENDING, SUBMITTED, EVALUATED, LATE
 }

@@ -27,4 +27,14 @@ abstract class Assessment {
     public LocalDate getDeadline() { return deadline; }
     public double getTotalMarks() { return totalMarks; }
     public List<Submission> getSubmissions() { return submissions; }
+
+    public void addSubmission(Submission submission) {
+        if (submission != null) {
+            submissions.add(submission);
+        }
+    }
+
+    public boolean isDeadlinePassed() {
+        return LocalDate.now().isAfter(deadline);
+    }
 }

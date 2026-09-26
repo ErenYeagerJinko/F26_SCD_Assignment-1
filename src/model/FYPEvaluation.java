@@ -16,4 +16,13 @@ class FYPEvaluation {
     public void setScore(double score) { this.score = score; }
     public String getFeedback() { return feedback; }
     public void setFeedback(String feedback) { this.feedback = feedback; }
+
+    public void evaluate(double score) {
+        this.score = score;
+        this.evaluationDate = LocalDate.now();
+    }
+
+    public void addFeedback(String feedback) {
+        this.feedback = feedback;
+    }
 }
