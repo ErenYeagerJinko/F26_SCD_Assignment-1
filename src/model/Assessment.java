@@ -3,6 +3,7 @@ package model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import util.Logger;
 
 public abstract class Assessment {
     private String id;
@@ -37,10 +38,16 @@ public abstract class Assessment {
     public void addSubmission(Submission submission) {
         if (submission != null) {
             submissions.add(submission);
+            Logger.info("Assessment " + id + ": submission " + submission.getSubmissionId() + " added");
         }
     }
 
     public boolean isDeadlinePassed() {
-        return LocalDate.now().isAfter(deadline);
+        boolean passed = LocalDate.now().isAfter(deadline);
+        Logger.info("Assessment " + id + ": deadline check = " + passed);
+        if (passed) {
+            Logger.warning("Assessment " + id + ": deadline has passed");
+        }
+        return passed;
     }
 }

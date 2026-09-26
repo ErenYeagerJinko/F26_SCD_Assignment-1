@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import util.Logger;
 
 public class Feedback {
     private String feedbackId;
@@ -12,6 +13,7 @@ public class Feedback {
         this.feedbackId = feedbackId;
         this.comments = comments;
         this.date = date;
+        Logger.info("Feedback created: " + feedbackId + " on " + date);
     }
 
     public String getFeedbackId() { return feedbackId; }
