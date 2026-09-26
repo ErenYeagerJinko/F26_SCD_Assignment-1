@@ -1,5 +1,5 @@
 package enums;
 
-enum EnrollmentStatus {
+public enum EnrollmentStatus {
     ACTIVE, DROPPED, COMPLETED
 }

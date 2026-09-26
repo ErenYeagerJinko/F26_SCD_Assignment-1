@@ -1,0 +1,5 @@
+# sectionId|courseCode|capacity|teacherId|taStudentId|day|start|end|room
+CS101-A|CS101|40|-|-|MONDAY|09:00|10:30|C-401
+CS101-B|CS101|35|-|-|WEDNESDAY|11:00|12:30|C-402
+CS201-A|CS201|30|-|-|TUESDAY|09:00|10:30|B-210
+SE3005-A|SE3005|25|-|-|THURSDAY|14:00|15:30|A-101

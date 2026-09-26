@@ -1,5 +1,5 @@
 package enums;
 
-enum RequestCategory {
+public enum RequestCategory {
     PROFESSOR, CLASSMATE, OTHER
 }
