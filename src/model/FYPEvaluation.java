@@ -1,6 +1,8 @@
 package model;
 
 import java.time.LocalDate;
+import util.Logger;
+import exceptions.InvalidFYPEvaluationException;
 
 public class FYPEvaluation {
     private String evaluationId;
@@ -13,6 +15,7 @@ public class FYPEvaluation {
         this.evaluationDate = evaluationDate;
         this.score = score;
         this.feedback = feedback;
+        Logger.info("FYPEvaluation created: " + evaluationId + " with score " + score);
     }
 
     public String getEvaluationId() { return evaluationId; }
@@ -24,12 +27,18 @@ public class FYPEvaluation {
     public String getFeedback() { return feedback; }
     public void setFeedback(String feedback) { this.feedback = feedback; }
 
-    public void evaluate(double score) {
+    public void evaluate(double score) throws InvalidFYPEvaluationException {
+        if (score < 0 || score > 100) {
+            Logger.error("FYPEvaluation " + evaluationId + ": invalid score " + score + " (must be 0-100)");
+            throw new InvalidFYPEvaluationException("Invalid score: " + score + " (must be between 0 and 100)");
+        }
         this.score = score;
         this.evaluationDate = LocalDate.now();
+        Logger.info("FYPEvaluation " + evaluationId + ": evaluated with score " + score);
     }
 
     public void addFeedback(String feedback) {
         this.feedback = feedback;
+        Logger.info("FYPEvaluation " + evaluationId + ": feedback added");
     }
 }

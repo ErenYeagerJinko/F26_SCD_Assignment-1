@@ -3,6 +3,8 @@ package model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import util.Logger;
+import exceptions.InvalidFYPGroupException;
 
 public class FYPGroup {
     private String groupId;
@@ -20,6 +22,7 @@ public class FYPGroup {
         this.members = new ArrayList<>();
         this.meetings = new ArrayList<>();
         this.evaluations = new ArrayList<>();
+        Logger.info("FYPGroup created: " + groupId + " (" + title + ")");
     }
 
     public String getGroupId() { return groupId; }
@@ -37,30 +40,65 @@ public class FYPGroup {
     public List<FYPEvaluation> getEvaluations() { return evaluations; }
     public void setEvaluations(List<FYPEvaluation> evaluations) { this.evaluations = evaluations; }
 
-    public void addMember(Student student) {
-        if (student != null && !members.contains(student)) {
-            members.add(student);
+    public void addMember(Student student) throws InvalidFYPGroupException {
+        if (student == null) {
+            Logger.error("FYPGroup " + groupId + ": cannot add null member");
+            throw new InvalidFYPGroupException("Cannot add null member to group");
+        }
+        if (members.contains(student)) {
+            Logger.warning("FYPGroup " + groupId + ": member " + student.getStudentId() + " already in group");
+            return;
+        }
+        if (members.size() >= 5) {
+            Logger.error("FYPGroup " + groupId + ": cannot add member, group full (max 5)");
+            throw new InvalidFYPGroupException("Group is full (maximum 5 members)");
+        }
+        members.add(student);
+        Logger.info("FYPGroup " + groupId + ": member added " + student.getStudentId());
+    }
+
+    public void removeMember(Student student) throws InvalidFYPGroupException {
+        if (student == null) {
+            Logger.error("FYPGroup " + groupId + ": cannot remove null member");
+            throw new InvalidFYPGroupException("Cannot remove null member from group");
+        }
+        if (members.remove(student)) {
+            Logger.info("FYPGroup " + groupId + ": member removed " + student.getStudentId());
+        } else {
+            Logger.warning("FYPGroup " + groupId + ": member " + student.getStudentId() + " not found in group");
+            throw new InvalidFYPGroupException("Member not found in group");
         }
     }
 
-    public void removeMember(Student student) {
-        members.remove(student);
-    }
-
-    public void assignSupervisor(PermanentInstructor supervisor) {
+    public void assignSupervisor(PermanentInstructor supervisor) throws InvalidFYPGroupException {
+        if (supervisor == null) {
+            Logger.error("FYPGroup " + groupId + ": cannot assign null supervisor");
+            throw new InvalidFYPGroupException("Cannot assign null supervisor");
+        }
         this.supervisor = supervisor;
+        Logger.info("FYPGroup " + groupId + ": supervisor assigned " + supervisor.getTeacherId());
     }
 
-    public void addMeeting(FYPMeeting meeting) {
-        if (meeting != null) {
-            meetings.add(meeting);
+    public void addMeeting(FYPMeeting meeting) throws InvalidFYPGroupException {
+        if (meeting == null) {
+            Logger.error("FYPGroup " + groupId + ": cannot add null meeting");
+            throw new InvalidFYPGroupException("Cannot add null meeting");
         }
+        meetings.add(meeting);
+        Logger.info("FYPGroup " + groupId + ": meeting added " + meeting.getMeetingId());
     }
 
-    public void addEvaluation(FYPEvaluation evaluation) {
-        if (evaluation != null) {
-            evaluations.add(evaluation);
+    public void addEvaluation(FYPEvaluation evaluation) throws InvalidFYPGroupException {
+        if (evaluation == null) {
+            Logger.error("FYPGroup " + groupId + ": cannot add null evaluation");
+            throw new InvalidFYPGroupException("Cannot add null evaluation");
         }
+        if (supervisor == null) {
+            Logger.error("FYPGroup " + groupId + ": cannot add evaluation, no supervisor assigned");
+            throw new InvalidFYPGroupException("Cannot add evaluation: group has no supervisor");
+        }
+        evaluations.add(evaluation);
+        Logger.info("FYPGroup " + groupId + ": evaluation added " + evaluation.getEvaluationId());
     }
 
     public String getDetails() {

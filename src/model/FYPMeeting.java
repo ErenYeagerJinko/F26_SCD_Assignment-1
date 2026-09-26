@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import util.Logger;
 
 public class FYPMeeting {
     private String meetingId;
@@ -13,6 +14,7 @@ public class FYPMeeting {
         this.meetingDate = meetingDate;
         this.agenda = agenda;
         this.notes = notes;
+        Logger.info("FYPMeeting created: " + meetingId + " on " + meetingDate);
     }
 
     public String getMeetingId() { return meetingId; }
@@ -30,5 +32,6 @@ public class FYPMeeting {
 
     public void updateNotes(String notes) {
         this.notes = notes;
+        Logger.info("FYPMeeting " + meetingId + ": notes updated");
     }
 }
