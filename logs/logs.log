@@ -1,0 +1,4 @@
+[INFO] 2026-09-27 09:57:47 - Person initialized: Name=Admin Name, Email=admin@uni.edu, Phone=1234567890
+[INFO] 2026-09-27 09:57:47 - Administrator initialized with Admin ID: A01
+[INFO] 2026-09-27 09:57:47 - AcademicOfficeAdmin initialized: Admin ID=A01
+[ERROR] 2026-09-27 09:58:26 - Failed to create Person: Invalid email format 'asdsa'
