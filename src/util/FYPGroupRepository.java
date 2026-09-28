@@ -14,7 +14,7 @@ public class FYPGroupRepository {
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
-            if (parts.length < 4) {
+            if (parts.length < 7) {
                 Logger.warning("Skipping malformed FYP group record: " + line);
                 continue;
             }

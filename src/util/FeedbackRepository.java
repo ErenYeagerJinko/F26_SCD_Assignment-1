@@ -16,7 +16,7 @@ public class FeedbackRepository {
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
-            if (parts.length < 5) {
+            if (parts.length < 4) {
                 Logger.warning("Skipping malformed feedback record: " + line);
                 continue;
             }

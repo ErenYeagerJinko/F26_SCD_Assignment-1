@@ -7,6 +7,8 @@ import util.Logger;
 import exceptions.InvalidFYPGroupException;
 
 public class FYPGroup {
+    public static final int MAX_MEMBERS = 5;
+
     private String groupId;
     private String title;
     private String description;
@@ -47,11 +49,11 @@ public class FYPGroup {
         }
         if (members.contains(student)) {
             Logger.warning("FYPGroup " + groupId + ": member " + student.getStudentId() + " already in group");
-            return;
+            throw new InvalidFYPGroupException("Student " + student.getStudentId() + " is already a member of group " + groupId);
         }
-        if (members.size() >= 5) {
-            Logger.error("FYPGroup " + groupId + ": cannot add member, group full (max 5)");
-            throw new InvalidFYPGroupException("Group is full (maximum 5 members)");
+        if (members.size() >= MAX_MEMBERS) {
+            Logger.error("FYPGroup " + groupId + ": cannot add member, group full (max " + MAX_MEMBERS + ")");
+            throw new InvalidFYPGroupException("Group is full (maximum " + MAX_MEMBERS + " members)");
         }
         members.add(student);
         Logger.info("FYPGroup " + groupId + ": member added " + student.getStudentId());

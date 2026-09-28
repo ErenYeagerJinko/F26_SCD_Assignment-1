@@ -13,9 +13,9 @@ public class FYPEvaluation {
     public FYPEvaluation(String evaluationId, LocalDate evaluationDate, double score, String feedback) {
         this.evaluationId = evaluationId;
         this.evaluationDate = evaluationDate;
-        this.score = score;
-        this.feedback = feedback;
-        Logger.info("FYPEvaluation created: " + evaluationId + " with score " + score);
+        this.score = (score < 0.0) ? 0.0 : ((score > 100.0) ? 100.0 : score);
+        this.feedback = feedback != null ? feedback.trim() : "";
+        Logger.info("FYPEvaluation created: " + evaluationId + " with score " + this.score);
     }
 
     public String getEvaluationId() { return evaluationId; }
@@ -23,7 +23,9 @@ public class FYPEvaluation {
     public LocalDate getEvaluationDate() { return evaluationDate; }
     public void setEvaluationDate(LocalDate evaluationDate) { this.evaluationDate = evaluationDate; }
     public double getScore() { return score; }
-    public void setScore(double score) { this.score = score; }
+    public void setScore(double score) {
+        this.score = (score < 0.0) ? 0.0 : ((score > 100.0) ? 100.0 : score);
+    }
     public String getFeedback() { return feedback; }
     public void setFeedback(String feedback) { this.feedback = feedback; }
 
@@ -38,7 +40,13 @@ public class FYPEvaluation {
     }
 
     public void addFeedback(String feedback) {
-        this.feedback = feedback;
-        Logger.info("FYPEvaluation " + evaluationId + ": feedback added");
+        if (feedback != null && !feedback.trim().isEmpty()) {
+            if (this.feedback == null || this.feedback.trim().isEmpty()) {
+                this.feedback = feedback.trim();
+            } else {
+                this.feedback = this.feedback + "; " + feedback.trim();
+            }
+            Logger.info("FYPEvaluation " + evaluationId + ": feedback appended");
+        }
     }
 }

@@ -1,11 +1,14 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.concurrent.atomic.AtomicInteger;
 import enums.SubmissionStatus;
 import util.Logger;
 import exceptions.SubmissionDeadlineException;
 
 public class Submission {
+    private static final AtomicInteger ID_COUNTER = new AtomicInteger(1);
+
     private String submissionId;
     private Assignment assignment;
     private Student student;
@@ -18,10 +21,10 @@ public class Submission {
     public Submission(Assignment assignment, Student student, String content) {
         this.assignment = assignment;
         this.student = student;
-        this.content = content;
+        this.content = content != null ? content : "";
         this.submissionDate = LocalDate.now();
         this.status = SubmissionStatus.PENDING;
-        this.submissionId = "SUB-" + System.currentTimeMillis();
+        this.submissionId = "SUB-" + System.currentTimeMillis() + "-" + ID_COUNTER.getAndIncrement();
         Logger.info("Submission created: " + submissionId + " for assignment " + (assignment != null ? assignment.getId() : "null") + " by student " + (student != null ? student.getStudentId() : "null"));
     }
 
@@ -43,19 +46,26 @@ public class Submission {
     public void setStatus(SubmissionStatus status) { this.status = status; }
 
     public void submit() throws SubmissionDeadlineException {
-        if (assignment != null && assignment.isDeadlinePassed()) {
+        if (assignment == null) {
+            Logger.error("Submission " + submissionId + ": cannot submit, assignment is null");
+            throw new SubmissionDeadlineException("Cannot submit: submission is not linked to an assignment.");
+        }
+        if (assignment.isDeadlinePassed()) {
             Logger.error("Submission " + submissionId + ": cannot submit, deadline has passed");
             throw new SubmissionDeadlineException("Cannot submit: deadline has passed for assignment " + assignment.getId());
         }
         this.submissionDate = LocalDate.now();
         this.status = SubmissionStatus.SUBMITTED;
-        Logger.info("Submission " + submissionId + ": submitted by student " + (student != null ? student.getStudentId() : "null"));
+        Logger.info("Submission " + submissionId + ": submitted by student " + (student != null ? student.getStudentId() : "unknown"));
     }
 
     public boolean isLate() {
-        boolean late = assignment != null && submissionDate != null && submissionDate.isAfter(assignment.getDeadline());
+        if (assignment == null || submissionDate == null) {
+            return false;
+        }
+        boolean late = submissionDate.isAfter(assignment.getDeadline());
         if (late) {
-            Logger.warning("Submission " + submissionId + ": submitted late (deadline was " + (assignment != null ? assignment.getDeadline() : "unknown") + ")");
+            Logger.warning("Submission " + submissionId + ": submitted late (deadline was " + assignment.getDeadline() + ")");
         }
         return late;
     }

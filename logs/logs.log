@@ -2,3 +2,269 @@
 [INFO] 2026-09-27 09:57:47 - Administrator initialized with Admin ID: A01
 [INFO] 2026-09-27 09:57:47 - AcademicOfficeAdmin initialized: Admin ID=A01
 [ERROR] 2026-09-27 09:58:26 - Failed to create Person: Invalid email format 'asdsa'
+[INFO] 2026-09-29 00:32:07 - FYPMeeting created: MTG-001 on 2026-09-29
+[INFO] 2026-09-29 00:32:07 - Wrote 1 record(s) to data/fyp_meetings.txt
+[INFO] 2026-09-29 00:32:07 - Read 1 record(s) from data/fyp_meetings.txt
+[INFO] 2026-09-29 00:32:07 - FYPMeeting created: MTG-001 on 2026-09-29
+[INFO] 2026-09-29 00:32:07 - Loaded 1 FYP meeting(s)
+[INFO] 2026-09-29 00:32:07 - FYPEvaluation created: EVAL-001 with score 88.5
+[INFO] 2026-09-29 00:32:07 - Wrote 1 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-09-29 00:32:07 - Read 1 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-09-29 00:32:07 - FYPEvaluation created: EVAL-001 with score 88.5
+[INFO] 2026-09-29 00:32:07 - Loaded 1 FYP evaluation(s)
+[INFO] 2026-09-29 00:32:07 - Feedback created: FB-001 on 2026-09-29
+[INFO] 2026-09-29 00:32:07 - Wrote 1 record(s) to data/feedback.txt
+[INFO] 2026-09-29 00:32:07 - Read 1 record(s) from data/feedback.txt
+[INFO] 2026-09-29 00:32:07 - Feedback created: FB-001 on 2026-09-29
+[INFO] 2026-09-29 00:32:07 - Loaded 1 feedback(s)
+[INFO] 2026-09-29 00:32:07 - Course initialized: Code=CS101, Title=Intro CS, CreditHours=3
+[INFO] 2026-09-29 00:32:07 - Added section CS101-A to course CS101
+[INFO] 2026-09-29 00:32:07 - Section initialized: ID=CS101-A, Course=CS101, Capacity=30
+[INFO] 2026-09-29 00:32:07 - Person initialized: Name=Alice, Email=alice@fast.edu, Phone=111
+[INFO] 2026-09-29 00:32:07 - Student initialized with ID: STU-001
+[INFO] 2026-09-29 00:32:07 - NormalStudent initialized: ID=STU-001, Name=Alice
+[INFO] 2026-09-29 00:32:07 - Assignment created: ASN-001 (Lab 1) for section CS101-A by TA null
+[INFO] 2026-09-29 00:32:07 - Submission created: SUB-1790623927344-1 for assignment ASN-001 by student STU-001
+[INFO] 2026-09-29 00:32:07 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-09-29 00:32:07 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-09-29 00:32:07 - Submission created: SUB-1790623927387-2 for assignment ASN-001 by student STU-001
+[INFO] 2026-09-29 00:32:07 - Loaded 1 submission(s)
+[INFO] 2026-09-29 00:32:07 - Person initialized: Name=Dr. Smith, Email=smith@fast.edu, Phone=222
+[INFO] 2026-09-29 00:32:07 - Instructor initialized with Teacher ID: PI-001
+[INFO] 2026-09-29 00:32:07 - PermanentInstructor initialized: Teacher ID=PI-001, Name=Dr. Smith
+[INFO] 2026-09-29 00:32:07 - FYPGroup created: GRP-001 (AI Campus)
+[INFO] 2026-09-29 00:32:07 - FYPGroup GRP-001: member added STU-001
+[INFO] 2026-09-29 00:32:07 - FYPGroup GRP-001: meeting added MTG-001
+[INFO] 2026-09-29 00:32:07 - FYPGroup GRP-001: evaluation added EVAL-001
+[INFO] 2026-09-29 00:32:07 - Wrote 1 record(s) to data/fyp_groups.txt
+[INFO] 2026-09-29 00:32:07 - Read 1 record(s) from data/fyp_groups.txt
+[INFO] 2026-09-29 00:32:07 - FYPGroup created: GRP-001 (AI Campus)
+[INFO] 2026-09-29 00:32:07 - FYPGroup GRP-001: member added STU-001
+[INFO] 2026-09-29 00:32:07 - FYPGroup GRP-001: meeting added MTG-001
+[INFO] 2026-09-29 00:32:07 - FYPGroup GRP-001: evaluation added EVAL-001
+[INFO] 2026-09-29 00:32:07 - Loaded 1 FYP group(s)
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Admin John, Email=admin@fast.edu, Phone=03001234567
+[INFO] 2026-09-29 01:09:07 - Administrator initialized with Admin ID: ADM-01
+[INFO] 2026-09-29 01:09:07 - AcademicOfficeAdmin initialized: Admin ID=ADM-01
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS101, Title=Programming Fundamentals, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS102, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Added prerequisite CS101 to course CS102
+[INFO] 2026-09-29 01:09:07 - Admin ADM-01 created course: CS101
+[INFO] 2026-09-29 01:09:07 - Admin ADM-01 created course: CS102
+[INFO] 2026-09-29 01:09:07 - Added section CS101-A to course CS101
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=CS101-A, Course=CS101, Capacity=2
+[INFO] 2026-09-29 01:09:07 - Schedule initialized: MONDAY 08:30-10:00 @ Lab-1
+[INFO] 2026-09-29 01:09:07 - Admin ADM-01 assigning schedule to section CS101-A
+[INFO] 2026-09-29 01:09:07 - Schedule assigned to section CS101-A: MONDAY 08:30-10:00 @ Lab-1
+[INFO] 2026-09-29 01:09:07 - Schedule assigned successfully to section CS101-A
+[INFO] 2026-09-29 01:09:07 - Admin ADM-01 setting capacity of section CS101-A to 2
+[INFO] 2026-09-29 01:09:07 - Capacity of section CS101-A set to 2
+[INFO] 2026-09-29 01:09:07 - Capacity updated successfully for section CS101-A
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=MT101, Title=Calculus, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Added section MT101-A to course MT101
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=MT101-A, Course=MT101, Capacity=10
+[INFO] 2026-09-29 01:09:07 - Schedule initialized: TUESDAY 10:00-11:30 @ Room-101
+[INFO] 2026-09-29 01:09:07 - Schedule assigned to section MT101-A: TUESDAY 10:00-11:30 @ Room-101
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Zaid, Email=zaid@fast.edu, Phone=03121234567
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-100
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-100, Name=Zaid
+[INFO] 2026-09-29 01:09:07 - Student STU-100 attempting registration for section MT101-A
+[INFO] 2026-09-29 01:09:07 - Enrollment initialized: ID=ENR-STU-100-MT101-A, Student=STU-100, Section=MT101-A
+[INFO] 2026-09-29 01:09:07 - Student STU-100 enrolled in section MT101-A
+[INFO] 2026-09-29 01:09:07 - Student STU-100 recalculated total credit hours: 3
+[INFO] 2026-09-29 01:09:07 - Student STU-100 successfully registered for section MT101-A
+[INFO] 2026-09-29 01:09:07 - Student STU-100 viewing enrolled courses
+[INFO] 2026-09-29 01:09:07 - Student STU-100 recalculated total credit hours: 3
+[INFO] 2026-09-29 01:09:07 - Student STU-100 viewing timetable
+[INFO] 2026-09-29 01:09:07 - Student STU-100 dropping section MT101-A
+[INFO] 2026-09-29 01:09:07 - Enrollment ENR-STU-100-MT101-A cancelled for student STU-100
+[INFO] 2026-09-29 01:09:07 - Student STU-100 dropped from section MT101-A
+[INFO] 2026-09-29 01:09:07 - Student STU-100 recalculated total credit hours: 0
+[INFO] 2026-09-29 01:09:07 - Student STU-100 successfully dropped section MT101-A
+[INFO] 2026-09-29 01:09:07 - Student STU-100 recalculated total credit hours: 0
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS202, Title=Digital Logic, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Added section CS201-A to course CS201
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=CS201-A, Course=CS201, Capacity=50
+[INFO] 2026-09-29 01:09:07 - Added section CS202-A to course CS202
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=CS202-A, Course=CS202, Capacity=50
+[INFO] 2026-09-29 01:09:07 - Schedule initialized: WEDNESDAY 09:00-10:30 @ CS-1
+[INFO] 2026-09-29 01:09:07 - Schedule initialized: WEDNESDAY 09:30-11:00 @ CS-2
+[INFO] 2026-09-29 01:09:07 - Schedule assigned to section CS201-A: WEDNESDAY 09:00-10:30 @ CS-1
+[INFO] 2026-09-29 01:09:07 - Schedule assigned to section CS202-A: WEDNESDAY 09:30-11:00 @ CS-2
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Sara, Email=sara@fast.edu, Phone=03331234567
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-101
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-101, Name=Sara
+[INFO] 2026-09-29 01:09:07 - Student STU-101 attempting registration for section CS201-A
+[INFO] 2026-09-29 01:09:07 - Enrollment initialized: ID=ENR-STU-101-CS201-A, Student=STU-101, Section=CS201-A
+[INFO] 2026-09-29 01:09:07 - Student STU-101 enrolled in section CS201-A
+[INFO] 2026-09-29 01:09:07 - Student STU-101 recalculated total credit hours: 3
+[INFO] 2026-09-29 01:09:07 - Student STU-101 successfully registered for section CS201-A
+[INFO] 2026-09-29 01:09:07 - Student STU-101 attempting registration for section CS202-A
+[ERROR] 2026-09-29 01:09:07 - Registration failed for student STU-101: Timetable clash detected with section CS201-A
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS301, Title=Database Systems, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Added section CS301-A to course CS301
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=CS301-A, Course=CS301, Capacity=40
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Dr. Usman, Email=usman@fast.edu, Phone=03211234567
+[INFO] 2026-09-29 01:09:07 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-09-29 01:09:07 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Usman
+[INFO] 2026-09-29 01:09:07 - Instructor INS-01 assigned to section: CS301-A
+[INFO] 2026-09-29 01:09:07 - Instructor INS-01 assigned to section CS301-A
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Bilal, Email=bilal@fast.edu, Phone=03451234567
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-102
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-102, Name=Bilal
+[INFO] 2026-09-29 01:09:07 - Enrollment initialized: ID=ENR-STU-102-CS301-A, Student=STU-102, Section=CS301-A
+[INFO] 2026-09-29 01:09:07 - Student STU-102 enrolled in section CS301-A
+[INFO] 2026-09-29 01:09:07 - Instructor INS-01 marking attendance for student STU-102 in section CS301-A as PRESENT
+[INFO] 2026-09-29 01:09:07 - Attendance successfully marked for student STU-102
+[INFO] 2026-09-29 01:09:07 - Attendance record added for section CS301-A
+[INFO] 2026-09-29 01:09:07 - Instructor INS-01 marked attendance record status as LATE
+[INFO] 2026-09-29 01:09:07 - Instructor INS-01 updating attendance status to: PRESENT
+[INFO] 2026-09-29 01:09:07 - Attendance record updated successfully to PRESENT
+[INFO] 2026-09-29 01:09:07 - Instructor INS-01 calculating attendance percentage for student STU-102 in section CS301-A
+[INFO] 2026-09-29 01:09:07 - Attendance percentage for student STU-102 is 100.00%
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS401, Title=Operating Systems, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Added section CS401-A to course CS401
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=CS401-A, Course=CS401, Capacity=40
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Hamza, Email=hamza@fast.edu, Phone=03009999999
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-TA
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-TA, Name=Hamza
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Hamza, Email=hamza@fast.edu, Phone=03009999999
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-TA
+[INFO] 2026-09-29 01:09:07 - TeachingAssistant initialized with ID: STU-TA and assigned section: CS401-A
+[INFO] 2026-09-29 01:09:07 - TA STU-TA running evaluate() on assigned section
+[INFO] 2026-09-29 01:09:07 - TA STU-TA creating assignment ID: ASN-1790626147207-1 ('Process Scheduling') for section CS401-A
+[INFO] 2026-09-29 01:09:07 - Assignment created: ASN-1790626147207-1 (Process Scheduling) for section CS401-A by TA STU-TA
+[INFO] 2026-09-29 01:09:07 - Assignment ASN-1790626147207-1 successfully created by TA STU-TA
+[INFO] 2026-09-29 01:09:07 - Assignment ASN-1790626147207-1: deadline check = false
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Danyal, Email=danyal@fast.edu, Phone=03008888888
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-103
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-103, Name=Danyal
+[INFO] 2026-09-29 01:09:07 - Student STU-103 submitting assignment ID: ASN-1790626147207-1
+[INFO] 2026-09-29 01:09:07 - Assignment ASN-1790626147207-1: deadline check = false
+[INFO] 2026-09-29 01:09:07 - Submission created: SUB-1790626147226-1 for assignment ASN-1790626147207-1 by student STU-103
+[INFO] 2026-09-29 01:09:07 - Assignment ASN-1790626147207-1: submission SUB-1790626147226-1 added (validated)
+[INFO] 2026-09-29 01:09:07 - Student STU-103 successfully submitted assignment ID: ASN-1790626147207-1
+[INFO] 2026-09-29 01:09:07 - TA STU-TA evaluating submission ID SUB-1790626147226-1 with marks: 92.5
+[INFO] 2026-09-29 01:09:07 - Submission SUB-1790626147226-1: marks assigned = 92.5
+[INFO] 2026-09-29 01:09:07 - Submission ID SUB-1790626147226-1 successfully evaluated by TA STU-TA
+[INFO] 2026-09-29 01:09:07 - TA STU-TA providing feedback for submission ID: SUB-1790626147226-1
+[INFO] 2026-09-29 01:09:07 - Feedback created: FB-1790626147237-2 on 2026-09-29
+[INFO] 2026-09-29 01:09:07 - Submission SUB-1790626147226-1: feedback added
+[INFO] 2026-09-29 01:09:07 - Feedback successfully added to submission ID: SUB-1790626147226-1
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Dr. Ayesha, Email=ayesha@fast.edu, Phone=03007777777
+[INFO] 2026-09-29 01:09:07 - Instructor initialized with Teacher ID: PI-99
+[INFO] 2026-09-29 01:09:07 - PermanentInstructor initialized: Teacher ID=PI-99, Name=Dr. Ayesha
+[INFO] 2026-09-29 01:09:07 - FYPGroup created: FYP-01 (Autonomous Drone Navigation)
+[INFO] 2026-09-29 01:09:07 - FYPGroup FYP-01: supervisor assigned PI-99
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Ali, Email=ali@fast.edu, Phone=03001111111
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-201
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-201, Name=Ali
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Omer, Email=omer@fast.edu, Phone=03002222222
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-202
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-202, Name=Omer
+[INFO] 2026-09-29 01:09:07 - FYPGroup FYP-01: member added STU-201
+[INFO] 2026-09-29 01:09:07 - FYPGroup FYP-01: member added STU-202
+[INFO] 2026-09-29 01:09:07 - FYPMeeting created: MTG-01 on 2026-09-29
+[INFO] 2026-09-29 01:09:07 - PermanentInstructor PI-99 scheduling FYP meeting for group: FYP-01
+[INFO] 2026-09-29 01:09:07 - FYPGroup FYP-01: meeting added MTG-01
+[INFO] 2026-09-29 01:09:07 - FYP meeting successfully scheduled for group: FYP-01
+[INFO] 2026-09-29 01:09:07 - FYPEvaluation created: EVAL-01 with score 85.0
+[INFO] 2026-09-29 01:09:07 - PermanentInstructor PI-99 evaluating FYP for group: FYP-01
+[INFO] 2026-09-29 01:09:07 - FYPGroup FYP-01: evaluation added EVAL-01
+[INFO] 2026-09-29 01:09:07 - FYP successfully evaluated for group: FYP-01
+[INFO] 2026-09-29 01:09:07 - PermanentInstructor PI-99 providing feedback for evaluation ID: EVAL-01
+[INFO] 2026-09-29 01:09:07 - FYPEvaluation EVAL-01: feedback appended
+[INFO] 2026-09-29 01:09:07 - Feedback successfully added for evaluation ID: EVAL-01
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Zara, Email=z@f.edu, Phone=1
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: S1
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=S1, Name=Zara
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Ahmed, Email=a@f.edu, Phone=2
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: S2
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=S2, Name=Ahmed
+[INFO] 2026-09-29 01:09:07 - FYPMeeting created: M1 on 2026-09-27
+[INFO] 2026-09-29 01:09:07 - FYPMeeting created: M2 on 2026-10-01
+[INFO] 2026-09-29 01:09:07 - Course initialized: Code=CS500, Title=Distributed Systems, CreditHours=3
+[INFO] 2026-09-29 01:09:07 - Added section CS500-A to course CS500
+[INFO] 2026-09-29 01:09:07 - Section initialized: ID=CS500-A, Course=CS500, Capacity=30
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Faizan, Email=f@f.edu, Phone=0300123
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-500
+[INFO] 2026-09-29 01:09:07 - NormalStudent initialized: ID=STU-500, Name=Faizan
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Farhan, Email=far@f.edu, Phone=0300456
+[INFO] 2026-09-29 01:09:07 - Student initialized with ID: STU-TA2
+[INFO] 2026-09-29 01:09:07 - TeachingAssistant initialized with ID: STU-TA2 and assigned section: CS500-A
+[INFO] 2026-09-29 01:09:07 - Person initialized: Name=Dr. Tariq, Email=t@f.edu, Phone=0300789
+[INFO] 2026-09-29 01:09:07 - Instructor initialized with Teacher ID: PI-500
+[INFO] 2026-09-29 01:09:07 - PermanentInstructor initialized: Teacher ID=PI-500, Name=Dr. Tariq
+[INFO] 2026-09-29 01:09:07 - Assignment created: ASN-TEST (Raft Consensus) for section CS500-A by TA STU-TA2
+[INFO] 2026-09-29 01:09:07 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-09-29 01:09:07 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-09-29 01:09:07 - Assignment created: ASN-TEST (Raft Consensus) for section CS500-A by TA STU-TA2
+[INFO] 2026-09-29 01:09:07 - Loaded 1 assignment(s)
+[INFO] 2026-09-29 01:09:07 - Submission created: SUB-1790626147315-2 for assignment ASN-TEST by student STU-500
+[INFO] 2026-09-29 01:09:07 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-09-29 01:09:07 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-09-29 01:09:07 - Submission created: SUB-1790626147329-3 for assignment ASN-TEST by student STU-500
+[INFO] 2026-09-29 01:09:07 - Loaded 1 submission(s)
+[INFO] 2026-09-29 01:09:07 - FYPMeeting created: MTG-TEST on 2026-09-29
+[INFO] 2026-09-29 01:09:07 - Wrote 1 record(s) to data/fyp_meetings.txt
+[INFO] 2026-09-29 01:09:07 - Read 1 record(s) from data/fyp_meetings.txt
+[INFO] 2026-09-29 01:09:07 - FYPMeeting created: MTG-TEST on 2026-09-29
+[INFO] 2026-09-29 01:09:07 - Loaded 1 FYP meeting(s)
+[INFO] 2026-09-29 01:09:07 - FYPEvaluation created: EVAL-TEST with score 90.0
+[INFO] 2026-09-29 01:09:07 - Wrote 1 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-09-29 01:09:07 - Read 1 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-09-29 01:09:07 - FYPEvaluation created: EVAL-TEST with score 90.0
+[INFO] 2026-09-29 01:09:07 - Loaded 1 FYP evaluation(s)
+[INFO] 2026-09-29 01:09:07 - Feedback created: FB-TEST on 2026-09-29
+[INFO] 2026-09-29 01:09:07 - Wrote 1 record(s) to data/feedback.txt
+[INFO] 2026-09-29 01:09:07 - Read 1 record(s) from data/feedback.txt
+[INFO] 2026-09-29 01:09:07 - Feedback created: FB-TEST on 2026-09-29
+[INFO] 2026-09-29 01:09:07 - Loaded 1 feedback(s)
+[INFO] 2026-09-29 01:09:07 - FYPGroup created: GRP-TEST (Quantum Routing)
+[INFO] 2026-09-29 01:09:07 - FYPGroup GRP-TEST: member added STU-500
+[INFO] 2026-09-29 01:09:07 - FYPGroup GRP-TEST: meeting added MTG-TEST
+[INFO] 2026-09-29 01:09:07 - FYPGroup GRP-TEST: evaluation added EVAL-TEST
+[INFO] 2026-09-29 01:09:07 - Wrote 1 record(s) to data/fyp_groups.txt
+[INFO] 2026-09-29 01:09:07 - Read 1 record(s) from data/fyp_groups.txt
+[INFO] 2026-09-29 01:09:07 - FYPGroup created: GRP-TEST (Quantum Routing)
+[INFO] 2026-09-29 01:09:07 - FYPGroup GRP-TEST: member added STU-500
+[INFO] 2026-09-29 01:09:07 - FYPGroup GRP-TEST: meeting added MTG-TEST
+[INFO] 2026-09-29 01:09:07 - FYPGroup GRP-TEST: evaluation added EVAL-TEST
+[INFO] 2026-09-29 01:09:07 - Loaded 1 FYP group(s)
+[INFO] 2026-09-29 01:09:19 - Person initialized: Name=Admin Name, Email=admin@uni.edu, Phone=1234567890
+[INFO] 2026-09-29 01:09:19 - Administrator initialized with Admin ID: A01
+[INFO] 2026-09-29 01:09:19 - AcademicOfficeAdmin initialized: Admin ID=A01
+[ERROR] 2026-09-29 01:09:19 - Failed to create Person: Invalid email format 'Ali'
+[INFO] 2026-09-29 01:09:19 - Person initialized: Name=Dr. Asim, Email=asim@f.edu, Phone=03002
+[INFO] 2026-09-29 01:09:19 - Instructor initialized with Teacher ID: I01
+[INFO] 2026-09-29 01:09:19 - PermanentInstructor initialized: Teacher ID=I01, Name=Dr. Asim
+[INFO] 2026-09-29 01:09:19 - Course initialized: Code=2, Title=3, CreditHours=1
+[INFO] 2026-09-29 01:09:19 - Admin A01 created course: 2
+[INFO] 2026-09-29 01:09:48 - Person initialized: Name=Admin Name, Email=admin@uni.edu, Phone=1234567890
+[INFO] 2026-09-29 01:09:48 - Administrator initialized with Admin ID: A01
+[INFO] 2026-09-29 01:09:48 - AcademicOfficeAdmin initialized: Admin ID=A01
+[ERROR] 2026-09-29 01:09:48 - Failed to create Person: Invalid email format 'Ali Khan'
+[INFO] 2026-09-29 01:09:48 - Person initialized: Name=Dr. Asim, Email=asim@fast.edu, Phone=03007654321
+[INFO] 2026-09-29 01:09:48 - Instructor initialized with Teacher ID: I01
+[INFO] 2026-09-29 01:09:48 - PermanentInstructor initialized: Teacher ID=I01, Name=Dr. Asim
+[INFO] 2026-09-29 01:09:48 - Course initialized: Code=2, Title=3, CreditHours=1
+[INFO] 2026-09-29 01:09:48 - Admin A01 created course: 2
+[INFO] 2026-09-29 01:10:00 - Person initialized: Name=Admin Name, Email=admin@uni.edu, Phone=1234567890
+[INFO] 2026-09-29 01:10:00 - Administrator initialized with Admin ID: A01
+[INFO] 2026-09-29 01:10:00 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-09-29 01:10:12 - Person initialized: Name=Admin Name, Email=admin@uni.edu, Phone=1234567890
+[INFO] 2026-09-29 01:10:12 - Administrator initialized with Admin ID: A01
+[INFO] 2026-09-29 01:10:12 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-09-29 01:10:24 - Person initialized: Name=Admin Name, Email=admin@uni.edu, Phone=1234567890
+[INFO] 2026-09-29 01:10:24 - Administrator initialized with Admin ID: A01
+[INFO] 2026-09-29 01:10:24 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-09-29 01:10:24 - Course initialized: Code=CS101, Title=Programming Fundamentals, CreditHours=3
+[INFO] 2026-09-29 01:10:24 - Admin A01 created course: CS101
+[INFO] 2026-09-29 01:10:24 - Person initialized: Name=Ali Khan, Email=ali@fast.edu, Phone=03001234567
+[INFO] 2026-09-29 01:10:24 - Student initialized with ID: S01
+[INFO] 2026-09-29 01:10:24 - NormalStudent initialized: ID=S01, Name=Ali Khan
+[INFO] 2026-09-29 01:10:24 - Person initialized: Name=Dr. Asim, Email=asim@fast.edu, Phone=03007654321
+[INFO] 2026-09-29 01:10:24 - Instructor initialized with Teacher ID: I01
+[INFO] 2026-09-29 01:10:24 - PermanentInstructor initialized: Teacher ID=I01, Name=Dr. Asim
+[INFO] 2026-09-29 01:10:24 - Student S01 viewing timetable

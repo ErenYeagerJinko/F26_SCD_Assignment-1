@@ -7,6 +7,7 @@ import exceptions.*;
 import util.*;
 
 public class TeachingAssistant extends Student implements Evaluator {
+    private static final java.util.concurrent.atomic.AtomicInteger ID_COUNTER = new java.util.concurrent.atomic.AtomicInteger(1);
     private Section assignedSection;
 
     public TeachingAssistant(String studentId, String name, String email, String phone) throws InvalidUserDataException {
@@ -31,7 +32,7 @@ public class TeachingAssistant extends Student implements Evaluator {
 
     public Assignment createAssignment(String title, String description, LocalDate deadline, double totalMarks)
             throws UnauthorizedActionException, AssessmentException, InvalidUserDataException {
-        String id = "ASN-" + System.currentTimeMillis();
+        String id = "ASN-" + System.currentTimeMillis() + "-" + ID_COUNTER.getAndIncrement();
         return createAssignment(id, title, description, deadline, totalMarks);
     }
 
@@ -94,7 +95,7 @@ public class TeachingAssistant extends Student implements Evaluator {
         }
 
         Logger.info("TA " + getStudentId() + " providing feedback for submission ID: " + submission.getSubmissionId());
-        Feedback feedback = new Feedback("FB-" + System.currentTimeMillis(), comments.trim(), LocalDate.now());
+        Feedback feedback = new Feedback("FB-" + System.currentTimeMillis() + "-" + ID_COUNTER.getAndIncrement(), comments.trim(), LocalDate.now());
         submission.addFeedback(feedback);
         Logger.info("Feedback successfully added to submission ID: " + submission.getSubmissionId());
     }

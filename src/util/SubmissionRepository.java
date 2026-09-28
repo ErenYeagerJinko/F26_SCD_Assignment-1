@@ -17,7 +17,7 @@ public class SubmissionRepository {
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
-            if (parts.length < 9) {
+            if (parts.length < 8) {
                 Logger.warning("Skipping malformed submission record: " + line);
                 continue;
             }
