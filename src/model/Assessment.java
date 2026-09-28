@@ -1,9 +1,6 @@
 package model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import util.Logger;
 
 public abstract class Assessment {
     private String id;
@@ -11,7 +8,6 @@ public abstract class Assessment {
     private String description;
     private LocalDate deadline;
     private double totalMarks;
-    private List<Submission> submissions;
 
     public Assessment(String id, String title, String description, LocalDate deadline, double totalMarks) {
         this.id = id;
@@ -19,7 +15,6 @@ public abstract class Assessment {
         this.description = description;
         this.deadline = deadline;
         this.totalMarks = totalMarks;
-        this.submissions = new ArrayList<>();
     }
 
     public String getId() { return id; }
@@ -32,22 +27,4 @@ public abstract class Assessment {
     public void setDeadline(LocalDate deadline) { this.deadline = deadline; }
     public double getTotalMarks() { return totalMarks; }
     public void setTotalMarks(double totalMarks) { this.totalMarks = totalMarks; }
-    public List<Submission> getSubmissions() { return submissions; }
-    public void setSubmissions(List<Submission> submissions) { this.submissions = submissions; }
-
-    public void addSubmission(Submission submission) {
-        if (submission != null) {
-            submissions.add(submission);
-            Logger.info("Assessment " + id + ": submission " + submission.getSubmissionId() + " added");
-        }
-    }
-
-    public boolean isDeadlinePassed() {
-        boolean passed = LocalDate.now().isAfter(deadline);
-        Logger.info("Assessment " + id + ": deadline check = " + passed);
-        if (passed) {
-            Logger.warning("Assessment " + id + ": deadline has passed");
-        }
-        return passed;
-    }
 }

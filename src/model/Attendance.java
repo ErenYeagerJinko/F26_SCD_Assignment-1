@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 import enums.AttendanceStatus;
 
-class Attendance {
+public class Attendance {
     private Student student;
     private Section section;
     private LocalDate date;

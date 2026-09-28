@@ -76,6 +76,19 @@ public abstract class Instructor extends Person {
         return section.getEnrolledStudents();
     }
 
+    public void markAttendance(Attendance attendance, AttendanceStatus status) throws InvalidUserDataException {
+        if (attendance == null) {
+            Logger.error("Instructor " + teacherId + " failed to mark attendance: Attendance record is null");
+            throw new InvalidUserDataException("Attendance record cannot be null.");
+        }
+        if (status == null) {
+            Logger.error("Instructor " + teacherId + " failed to mark attendance: Status is null");
+            throw new InvalidUserDataException("Attendance status cannot be null.");
+        }
+        attendance.setStatus(status);
+        Logger.info("Instructor " + teacherId + " marked attendance record status as " + status);
+    }
+
     public Attendance markAttendance(Student student, Section section, AttendanceStatus status) throws InvalidUserDataException {
         if (student == null) {
             Logger.error("Instructor " + teacherId + " failed to mark attendance: Student is null");

@@ -6,7 +6,7 @@ import java.time.*;
 import exceptions.*;
 import util.*;
 
-public class TeachingAssistant extends Student {
+public class TeachingAssistant extends Student implements Evaluator {
     private Section assignedSection;
 
     public TeachingAssistant(String studentId, String name, String email, String phone) throws InvalidUserDataException {
@@ -27,6 +27,12 @@ public class TeachingAssistant extends Student {
     public void setAssignedSection(Section assignedSection) {
         this.assignedSection = assignedSection;
         Logger.info("Assigned section for TA " + getStudentId() + " updated to: " + (assignedSection != null ? assignedSection.getSectionId() : "null"));
+    }
+
+    public Assignment createAssignment(String title, String description, LocalDate deadline, double totalMarks)
+            throws UnauthorizedActionException, AssessmentException, InvalidUserDataException {
+        String id = "ASN-" + System.currentTimeMillis();
+        return createAssignment(id, title, description, deadline, totalMarks);
     }
 
     public Assignment createAssignment(String id, String title, String description, LocalDate deadline, double totalMarks)
@@ -54,10 +60,10 @@ public class TeachingAssistant extends Student {
         return assignment;
     }
 
-    public List<Submission> viewSubmissions(Assignment assignment) throws AssessmentException {
+    public List<Submission> viewSubmissions(Assignment assignment) throws AssessmentException, InvalidUserDataException {
         if (assignment == null) {
             Logger.error("TA " + getStudentId() + " failed to view submissions: Assignment is null");
-            throw new AssessmentException("Assignment cannot be null.");
+            throw new InvalidUserDataException("Assignment cannot be null.");
         }
         Logger.info("TA " + getStudentId() + " viewing submissions for assignment ID: " + assignment.getId());
         return assignment.getSubmissions();
@@ -66,7 +72,7 @@ public class TeachingAssistant extends Student {
     public void evaluateSubmission(Submission submission, double marks) throws AssessmentException, InvalidUserDataException {
         if (submission == null) {
             Logger.error("TA " + getStudentId() + " failed to evaluate submission: Submission is null");
-            throw new AssessmentException("Submission cannot be null.");
+            throw new InvalidUserDataException("Submission cannot be null.");
         }
         if (marks < 0) {
             Logger.error("TA " + getStudentId() + " failed to evaluate submission: Negative marks (" + marks + ")");
@@ -80,7 +86,7 @@ public class TeachingAssistant extends Student {
     public void giveFeedback(Submission submission, String comments) throws AssessmentException, InvalidUserDataException {
         if (submission == null) {
             Logger.error("TA " + getStudentId() + " failed to give feedback: Submission is null");
-            throw new AssessmentException("Submission cannot be null.");
+            throw new InvalidUserDataException("Submission cannot be null.");
         }
         if (comments == null || comments.trim().isEmpty()) {
             Logger.error("TA " + getStudentId() + " failed to give feedback: Comments are empty");
@@ -91,6 +97,11 @@ public class TeachingAssistant extends Student {
         Feedback feedback = new Feedback("FB-" + System.currentTimeMillis(), comments.trim(), LocalDate.now());
         submission.addFeedback(feedback);
         Logger.info("Feedback successfully added to submission ID: " + submission.getSubmissionId());
+    }
+
+    @Override
+    public void evaluate() {
+        Logger.info("TA " + getStudentId() + " running evaluate() on assigned section");
     }
 
     @Override
