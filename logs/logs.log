@@ -2,3 +2,99 @@
 [INFO] 2026-09-27 09:57:47 - Administrator initialized with Admin ID: A01
 [INFO] 2026-09-27 09:57:47 - AcademicOfficeAdmin initialized: Admin ID=A01
 [ERROR] 2026-09-27 09:58:26 - Failed to create Person: Invalid email format 'asdsa'
+[INFO] 2026-09-29 02:27:44 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-09-29 02:27:44 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-09-29 02:27:44 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-09-29 02:27:44 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-09-29 02:27:44 - Added prerequisite CS101 to course CS201
+[INFO] 2026-09-29 02:27:44 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-09-29 02:27:44 - Loaded 3 course(s)
+[INFO] 2026-09-29 02:27:44 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-09-29 02:27:44 - Added section CS101-A to course CS101
+[INFO] 2026-09-29 02:27:44 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-09-29 02:27:44 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-09-29 02:27:44 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-09-29 02:27:44 - Added section CS101-B to course CS101
+[INFO] 2026-09-29 02:27:44 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-09-29 02:27:44 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-09-29 02:27:44 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-09-29 02:27:44 - Added section CS201-A to course CS201
+[INFO] 2026-09-29 02:27:44 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-09-29 02:27:44 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-09-29 02:27:44 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-09-29 02:27:44 - Added section SE3005-A to course SE3005
+[INFO] 2026-09-29 02:27:44 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-09-29 02:27:44 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-09-29 02:27:44 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-09-29 02:27:44 - Loaded 4 section(s)
+[INFO] 2026-09-29 02:27:44 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-09-29 02:27:44 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-09-29 02:27:44 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-09-29 02:27:44 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-09-29 02:27:44 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-09-29 02:27:44 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-09-29 02:27:44 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-09-29 02:27:44 - Loaded 2 request(s)
+[INFO] 2026-09-29 02:27:44 - Course initialized: Code=SE3005, Title=Software Construction, CreditHours=3
+[INFO] 2026-09-29 02:27:44 - Added section SE3005-A to course SE3005
+[INFO] 2026-09-29 02:27:44 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=40
+[INFO] 2026-09-29 02:27:44 - Person initialized: Name=Hamza Khan, Email=hamza@fast.edu, Phone=03001234567
+[INFO] 2026-09-29 02:27:44 - Student initialized with ID: STU-101
+[INFO] 2026-09-29 02:27:44 - NormalStudent initialized: ID=STU-101, Name=Hamza Khan
+[INFO] 2026-09-29 02:27:44 - Person initialized: Name=Sara Ahmed, Email=sara@fast.edu, Phone=03009876543
+[INFO] 2026-09-29 02:27:44 - Student initialized with ID: TA-201
+[INFO] 2026-09-29 02:27:44 - TeachingAssistant initialized with ID: TA-201
+[INFO] 2026-09-29 02:27:44 - Assigned section for TA TA-201 updated to: SE3005-A
+[INFO] 2026-09-29 02:27:44 - Person initialized: Name=Dr. Usman, Email=usman@fast.edu, Phone=03005555555
+[INFO] 2026-09-29 02:27:44 - Instructor initialized with Teacher ID: INS-301
+[INFO] 2026-09-29 02:27:44 - PermanentInstructor initialized: Teacher ID=INS-301, Name=Dr. Usman
+[INFO] 2026-09-29 02:27:44 - TA TA-201 creating assignment ID: ASN-001 ('Sprint 1 Implementation') for section SE3005-A
+[INFO] 2026-09-29 02:27:44 - Assignment created: ASN-001 (Sprint 1 Implementation) for section SE3005-A by TA TA-201
+[INFO] 2026-09-29 02:27:44 - Assignment ASN-001 successfully created by TA TA-201
+[INFO] 2026-09-29 02:27:44 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-09-29 02:27:44 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-09-29 02:27:44 - Assignment created: ASN-001 (Sprint 1 Implementation) for section SE3005-A by TA TA-201
+[INFO] 2026-09-29 02:27:44 - Loaded 1 assignment(s)
+[INFO] 2026-09-29 02:27:44 - Feedback created: FB-001 on 2026-09-29
+[INFO] 2026-09-29 02:27:44 - Wrote 1 record(s) to data/feedback.txt
+[INFO] 2026-09-29 02:27:44 - Read 1 record(s) from data/feedback.txt
+[INFO] 2026-09-29 02:27:44 - Feedback created: FB-001 on 2026-09-29
+[INFO] 2026-09-29 02:27:44 - Loaded 1 feedback(s)
+[INFO] 2026-09-29 02:27:44 - Student STU-101 submitting assignment ID: ASN-001
+[INFO] 2026-09-29 02:27:44 - Assignment ASN-001: deadline check = false
+[INFO] 2026-09-29 02:27:44 - Submission created: SUB-1 for assignment ASN-001 by student STU-101
+[INFO] 2026-09-29 02:27:44 - Assignment ASN-001: submission SUB-1 added (validated)
+[INFO] 2026-09-29 02:27:44 - Student STU-101 successfully submitted assignment ID: ASN-001
+[INFO] 2026-09-29 02:27:44 - TA TA-201 evaluating submission ID SUB-001 with marks: 92.5
+[INFO] 2026-09-29 02:27:44 - Submission SUB-001: marks assigned = 92.5
+[INFO] 2026-09-29 02:27:44 - Submission ID SUB-001 successfully evaluated by TA TA-201
+[INFO] 2026-09-29 02:27:44 - Submission SUB-001: feedback added
+[INFO] 2026-09-29 02:27:44 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-09-29 02:27:44 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-09-29 02:27:44 - Submission created: SUB-2 for assignment ASN-001 by student STU-101
+[INFO] 2026-09-29 02:27:44 - Loaded 1 submission(s)
+[INFO] 2026-09-29 02:27:44 - FYPMeeting created: MTG-001 on 2026-10-02
+[INFO] 2026-09-29 02:27:44 - Wrote 1 record(s) to data/fyp_meetings.txt
+[INFO] 2026-09-29 02:27:44 - Read 1 record(s) from data/fyp_meetings.txt
+[INFO] 2026-09-29 02:27:44 - FYPMeeting created: MTG-001 on 2026-10-02
+[INFO] 2026-09-29 02:27:44 - Loaded 1 FYP meeting(s)
+[INFO] 2026-09-29 02:27:44 - FYPEvaluation created: EVAL-001 with score 88.0
+[INFO] 2026-09-29 02:27:44 - Wrote 1 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-09-29 02:27:44 - Read 1 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-09-29 02:27:44 - FYPEvaluation created: EVAL-001 with score 88.0
+[INFO] 2026-09-29 02:27:44 - Loaded 1 FYP evaluation(s)
+[INFO] 2026-09-29 02:27:44 - FYPGroup created: GRP-001 (Autonomous Fleet Dispatcher)
+[INFO] 2026-09-29 02:27:44 - FYPGroup GRP-001: member added STU-101
+[INFO] 2026-09-29 02:27:44 - FYPGroup GRP-001: meeting added MTG-001
+[INFO] 2026-09-29 02:27:44 - FYPGroup GRP-001: evaluation added EVAL-001
+[INFO] 2026-09-29 02:27:44 - Wrote 1 record(s) to data/fyp_groups.txt
+[INFO] 2026-09-29 02:27:44 - Read 1 record(s) from data/fyp_groups.txt
+[INFO] 2026-09-29 02:27:44 - FYPGroup created: GRP-001 (Autonomous Fleet Dispatcher)
+[INFO] 2026-09-29 02:27:44 - FYPGroup GRP-001: member added STU-101
+[INFO] 2026-09-29 02:27:44 - FYPGroup GRP-001: meeting added MTG-001
+[INFO] 2026-09-29 02:27:44 - FYPGroup GRP-001: evaluation added EVAL-001
+[INFO] 2026-09-29 02:27:44 - Loaded 1 FYP group(s)
+[INFO] 2026-09-29 02:27:44 - TEST: Verification check started
+[ERROR] 2026-09-29 02:27:44 - Failed to create Person: Invalid email format 'bad-email-format'
+[WARNING] 2026-09-29 02:27:44 - TEST: Sample warning message logged
+[INFO] 2026-09-29 02:27:44 - TEST: Verification check completed

@@ -1,0 +1,1 @@
+MTG-001|2026-10-02|Architecture Review|Discuss design patterns
