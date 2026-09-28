@@ -1,9 +1,13 @@
 package model;
 
-import java.io.*;
-import java.util.*;
-import exceptions.*;
-import util.*;
+import java.util.ArrayList;
+import java.util.List;
+import exceptions.InvalidUserDataException;
+import exceptions.CourseFullException;
+import exceptions.CourseClashException;
+import exceptions.SubmissionDeadlineException;
+import exceptions.InvalidRequestException;
+import util.Logger;
 
 public abstract class Student extends Person {
     private String studentId;
@@ -74,6 +78,10 @@ public abstract class Student extends Person {
         Logger.info("Student " + studentId + " successfully registered for section " + section.getSectionId());
     }
 
+    public void drop(Section section) throws InvalidUserDataException {
+        dropSection(section);
+    }
+
     public void dropSection(Section section) throws InvalidUserDataException {
         if (section == null) {
             Logger.error("Drop section failed for student " + studentId + ": Section is null");
@@ -96,6 +104,20 @@ public abstract class Student extends Person {
         this.totalCreditHours = sum;
         Logger.info("Student " + studentId + " recalculated total credit hours: " + this.totalCreditHours);
         return totalCreditHours;
+    }
+
+    public List<Course> viewCourses() {
+        Logger.info("Student " + studentId + " viewing enrolled courses");
+        List<Course> courses = new ArrayList<>();
+        for (Enrollment enrollment : enrollments) {
+            if (enrollment != null && enrollment.getSection() != null && enrollment.getSection().getCourse() != null) {
+                Course course = enrollment.getSection().getCourse();
+                if (!courses.contains(course)) {
+                    courses.add(course);
+                }
+            }
+        }
+        return courses;
     }
 
     public List<Schedule> viewTimetable() {

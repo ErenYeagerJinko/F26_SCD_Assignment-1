@@ -1,23 +1,30 @@
 package util;
 
-import java.io.*;
-import java.time.*;
-import java.time.format.*;
-import java.util.*;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import enums.SubmissionStatus;
-import exceptions.*;
-import model.*;
+import exceptions.InvalidUserDataException;
+import model.Assignment;
+import model.Feedback;
+import model.Student;
+import model.Submission;
 
 public class SubmissionRepository {
     private static final String PATH = "data/submissions.txt";
     private static final DateTimeFormatter DATE = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static Map<String, Submission> load(Map<String, Assignment> assignments, Map<String, Student> students, Map<String, Feedback> feedbacks) throws IOException, InvalidUserDataException {
-        Map<String, Submission> submissions = new LinkedHashMap<>();
+        Map<String, Submission> submissions = new HashMap<>();
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
-            if (parts.length < 9) {
+            if (parts.length < 8) {
                 Logger.warning("Skipping malformed submission record: " + line);
                 continue;
             }
@@ -51,7 +58,11 @@ public class SubmissionRepository {
                 continue;
             }
 
-            Submission submission = new Submission(assignment, student, content != null ? content : "");
+            String contentStr = "";
+            if (content != null) {
+                contentStr = content;
+            }
+            Submission submission = new Submission(assignment, student, contentStr);
             submission.setSubmissionId(id);
             submission.setSubmissionDate(submissionDate);
             submission.setMarks(marks);
@@ -68,11 +79,25 @@ public class SubmissionRepository {
         if (submissions != null) {
             for (Submission s : submissions) {
                 if (s == null) continue;
-                String assignmentId = s.getAssignment() == null ? DelimitedFiles.EMPTY : s.getAssignment().getId();
-                String studentId = s.getStudent() == null ? DelimitedFiles.EMPTY : s.getStudent().getStudentId();
+
+                String assignmentId = DelimitedFiles.EMPTY;
+                if (s.getAssignment() != null) {
+                    assignmentId = s.getAssignment().getId();
+                }
+                String studentId = DelimitedFiles.EMPTY;
+                if (s.getStudent() != null) {
+                    studentId = s.getStudent().getStudentId();
+                }
                 String content = DelimitedFiles.sanitize(s.getContent());
-                String feedbackId = s.getFeedback() == null ? DelimitedFiles.EMPTY : s.getFeedback().getFeedbackId();
-                String status = s.getStatus() == null ? DelimitedFiles.EMPTY : s.getStatus().name();
+                String feedbackId = DelimitedFiles.EMPTY;
+                if (s.getFeedback() != null) {
+                    feedbackId = s.getFeedback().getFeedbackId();
+                }
+                String status = DelimitedFiles.EMPTY;
+                if (s.getStatus() != null) {
+                    status = s.getStatus().name();
+                }
+
                 lines.add(s.getSubmissionId() + DelimitedFiles.SEPARATOR
                         + assignmentId + DelimitedFiles.SEPARATOR
                         + studentId + DelimitedFiles.SEPARATOR
