@@ -1,18 +1,25 @@
 package util;
 
-import java.io.*;
-import java.time.*;
-import java.time.format.*;
-import java.util.*;
-import exceptions.*;
-import model.*;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import exceptions.InvalidUserDataException;
+import model.Evaluator;
+import model.Feedback;
+import model.TeachingAssistant;
+import model.PermanentInstructor;
 
 public class FeedbackRepository {
     private static final String PATH = "data/feedback.txt";
     private static final DateTimeFormatter DATE = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static Map<String, Feedback> load(Map<String, Evaluator> evaluators) throws IOException, InvalidUserDataException {
-        Map<String, Feedback> feedbacks = new LinkedHashMap<>();
+        Map<String, Feedback> feedbacks = new HashMap<>();
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
@@ -31,7 +38,11 @@ public class FeedbackRepository {
                 continue;
             }
 
-            Feedback feedback = new Feedback(id, comments != null ? comments : "", date);
+            String commentsStr = "";
+            if (comments != null) {
+                commentsStr = comments;
+            }
+            Feedback feedback = new Feedback(id, commentsStr, date);
             feedback.setEvaluator(evaluator);
             feedbacks.put(id, feedback);
         }
@@ -44,9 +55,16 @@ public class FeedbackRepository {
         if (feedbacks != null) {
             for (Feedback f : feedbacks) {
                 if (f == null) continue;
-                String evaluatorId = f.getEvaluator() == null ? DelimitedFiles.EMPTY : 
-                    (f.getEvaluator() instanceof model.TeachingAssistant ? ((model.TeachingAssistant) f.getEvaluator()).getStudentId() :
-                     f.getEvaluator() instanceof model.PermanentInstructor ? ((model.PermanentInstructor) f.getEvaluator()).getTeacherId() : DelimitedFiles.EMPTY);
+
+                String evaluatorId = DelimitedFiles.EMPTY;
+                if (f.getEvaluator() != null) {
+                    if (f.getEvaluator() instanceof TeachingAssistant) {
+                        evaluatorId = ((TeachingAssistant) f.getEvaluator()).getStudentId();
+                    } else if (f.getEvaluator() instanceof PermanentInstructor) {
+                        evaluatorId = ((PermanentInstructor) f.getEvaluator()).getTeacherId();
+                    }
+                }
+
                 String comments = DelimitedFiles.sanitize(f.getComments());
                 lines.add(f.getFeedbackId() + DelimitedFiles.SEPARATOR
                         + evaluatorId + DelimitedFiles.SEPARATOR

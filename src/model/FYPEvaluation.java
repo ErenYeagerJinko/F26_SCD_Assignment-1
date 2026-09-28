@@ -18,14 +18,37 @@ public class FYPEvaluation {
         Logger.info("FYPEvaluation created: " + evaluationId + " with score " + score);
     }
 
-    public String getEvaluationId() { return evaluationId; }
-    public void setEvaluationId(String evaluationId) { this.evaluationId = evaluationId; }
-    public LocalDate getEvaluationDate() { return evaluationDate; }
-    public void setEvaluationDate(LocalDate evaluationDate) { this.evaluationDate = evaluationDate; }
-    public double getScore() { return score; }
-    public void setScore(double score) { this.score = score; }
-    public String getFeedback() { return feedback; }
-    public void setFeedback(String feedback) { this.feedback = feedback; }
+    public String getEvaluationId() {
+        return evaluationId;
+    }
+
+    public void setEvaluationId(String evaluationId) {
+        this.evaluationId = evaluationId;
+    }
+
+    public LocalDate getEvaluationDate() {
+        return evaluationDate;
+    }
+
+    public void setEvaluationDate(LocalDate evaluationDate) {
+        this.evaluationDate = evaluationDate;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
+    public String getFeedback() {
+        return feedback;
+    }
+
+    public void setFeedback(String feedback) {
+        this.feedback = feedback;
+    }
 
     public void evaluate(double score) throws InvalidFYPEvaluationException {
         if (score < 0 || score > 100) {

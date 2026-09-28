@@ -25,20 +25,61 @@ public class FYPGroup {
         Logger.info("FYPGroup created: " + groupId + " (" + title + ")");
     }
 
-    public String getGroupId() { return groupId; }
-    public void setGroupId(String groupId) { this.groupId = groupId; }
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
-    public List<Student> getMembers() { return members; }
-    public void setMembers(List<Student> members) { this.members = members; }
-    public PermanentInstructor getSupervisor() { return supervisor; }
-    public void setSupervisor(PermanentInstructor supervisor) { this.supervisor = supervisor; }
-    public List<FYPMeeting> getMeetings() { return meetings; }
-    public void setMeetings(List<FYPMeeting> meetings) { this.meetings = meetings; }
-    public List<FYPEvaluation> getEvaluations() { return evaluations; }
-    public void setEvaluations(List<FYPEvaluation> evaluations) { this.evaluations = evaluations; }
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<Student> getMembers() {
+        return members;
+    }
+
+    public void setMembers(List<Student> members) {
+        this.members = members;
+    }
+
+    public PermanentInstructor getSupervisor() {
+        return supervisor;
+    }
+
+    public void setSupervisor(PermanentInstructor supervisor) {
+        this.supervisor = supervisor;
+    }
+
+    public List<FYPMeeting> getMeetings() {
+        return meetings;
+    }
+
+    public void setMeetings(List<FYPMeeting> meetings) {
+        this.meetings = meetings;
+    }
+
+    public List<FYPEvaluation> getEvaluations() {
+        return evaluations;
+    }
+
+    public void setEvaluations(List<FYPEvaluation> evaluations) {
+        this.evaluations = evaluations;
+    }
 
     public void addMember(Student student) throws InvalidFYPGroupException {
         if (student == null) {
@@ -102,8 +143,12 @@ public class FYPGroup {
     }
 
     public String getDetails() {
+        String supervisorName = "None";
+        if (supervisor != null) {
+            supervisorName = supervisor.getName();
+        }
         return "Group ID: " + groupId + ", Title: " + title + ", Description: " + description +
-                ", Members: " + members.size() + ", Supervisor: " + (supervisor != null ? supervisor.getName() : "None") +
+                ", Members: " + members.size() + ", Supervisor: " + supervisorName +
                 ", Meetings: " + meetings.size() + ", Evaluations: " + evaluations.size();
     }
 }

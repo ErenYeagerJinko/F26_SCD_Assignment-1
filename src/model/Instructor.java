@@ -1,11 +1,11 @@
 package model;
 
-import java.io.*;
-import java.util.*;
-import java.time.*;
-import enums.*;
-import exceptions.*;
-import util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.time.LocalDate;
+import enums.AttendanceStatus;
+import exceptions.InvalidUserDataException;
+import util.Logger;
 
 public abstract class Instructor extends Person {
     private String teacherId;
@@ -74,6 +74,19 @@ public abstract class Instructor extends Person {
         }
         Logger.info("Instructor " + teacherId + " viewing enrolled students for section: " + section.getSectionId());
         return section.getEnrolledStudents();
+    }
+
+    public void markAttendance(Attendance attendance, AttendanceStatus status) throws InvalidUserDataException {
+        if (attendance == null) {
+            Logger.error("Instructor " + teacherId + " failed to mark attendance: Attendance record is null");
+            throw new InvalidUserDataException("Attendance record cannot be null.");
+        }
+        if (status == null) {
+            Logger.error("Instructor " + teacherId + " failed to mark attendance: Status is null");
+            throw new InvalidUserDataException("Attendance status cannot be null.");
+        }
+        attendance.setStatus(status);
+        Logger.info("Instructor " + teacherId + " marked attendance record status as " + status);
     }
 
     public Attendance markAttendance(Student student, Section section, AttendanceStatus status) throws InvalidUserDataException {

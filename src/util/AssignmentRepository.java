@@ -1,18 +1,24 @@
 package util;
 
-import java.io.*;
-import java.time.*;
-import java.time.format.*;
-import java.util.*;
-import exceptions.*;
-import model.*;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import exceptions.InvalidUserDataException;
+import model.Assignment;
+import model.Section;
+import model.TeachingAssistant;
 
 public class AssignmentRepository {
     private static final String PATH = "data/assignments.txt";
     private static final DateTimeFormatter DATE = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static Map<String, Assignment> load(Map<String, Section> sections, Map<String, TeachingAssistant> tas) throws IOException, InvalidUserDataException {
-        Map<String, Assignment> assignments = new LinkedHashMap<>();
+        Map<String, Assignment> assignments = new HashMap<>();
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
@@ -45,7 +51,11 @@ public class AssignmentRepository {
                 continue;
             }
 
-            Assignment assignment = new Assignment(id, title, description != null ? description : "", deadline, totalMarks, section, createdBy);
+            String desc = "";
+            if (description != null) {
+                desc = description;
+            }
+            Assignment assignment = new Assignment(id, title, desc, deadline, totalMarks, section, createdBy);
             assignments.put(id, assignment);
         }
         Logger.info("Loaded " + assignments.size() + " assignment(s)");
@@ -57,8 +67,14 @@ public class AssignmentRepository {
         if (assignments != null) {
             for (Assignment a : assignments) {
                 if (a == null) continue;
-                String sectionId = a.getSection() == null ? DelimitedFiles.EMPTY : a.getSection().getSectionId();
-                String taId = a.getCreatedBy() == null ? DelimitedFiles.EMPTY : a.getCreatedBy().getStudentId();
+                String sectionId = DelimitedFiles.EMPTY;
+                if (a.getSection() != null) {
+                    sectionId = a.getSection().getSectionId();
+                }
+                String taId = DelimitedFiles.EMPTY;
+                if (a.getCreatedBy() != null) {
+                    taId = a.getCreatedBy().getStudentId();
+                }
                 String description = DelimitedFiles.sanitize(a.getDescription());
                 lines.add(a.getId() + DelimitedFiles.SEPARATOR
                         + DelimitedFiles.sanitize(a.getTitle()) + DelimitedFiles.SEPARATOR

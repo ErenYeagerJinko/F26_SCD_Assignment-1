@@ -1,16 +1,25 @@
 package util;
 
-import java.io.*;
-import java.util.*;
-import exceptions.*;
-import model.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import exceptions.InvalidFYPGroupException;
+import exceptions.InvalidUserDataException;
+import model.FYPEvaluation;
+import model.FYPGroup;
+import model.FYPMeeting;
+import model.PermanentInstructor;
+import model.Student;
 
 public class FYPGroupRepository {
     private static final String PATH = "data/fyp_groups.txt";
 
     public static Map<String, FYPGroup> load(Map<String, Student> students, Map<String, PermanentInstructor> supervisors,
             Map<String, FYPMeeting> meetings, Map<String, FYPEvaluation> evaluations) throws IOException, InvalidUserDataException {
-        Map<String, FYPGroup> groups = new LinkedHashMap<>();
+        Map<String, FYPGroup> groups = new HashMap<>();
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
@@ -26,7 +35,11 @@ public class FYPGroupRepository {
             String meetingIds = DelimitedFiles.optional(parts[5]);
             String evaluationIds = DelimitedFiles.optional(parts[6]);
 
-            FYPGroup group = new FYPGroup(groupId, title, description != null ? description : "");
+            String desc = "";
+            if (description != null) {
+                desc = description;
+            }
+            FYPGroup group = new FYPGroup(groupId, title, desc);
             group.setSupervisor(supervisor);
 
             if (memberIds != null) {
@@ -82,33 +95,58 @@ public class FYPGroupRepository {
         if (groups != null) {
             for (FYPGroup g : groups) {
                 if (g == null) continue;
-                String memberIds = joinIds(g.getMembers(), s -> s.getStudentId());
-                String supervisorId = g.getSupervisor() == null ? DelimitedFiles.EMPTY : g.getSupervisor().getTeacherId();
-                String meetingIds = joinIds(g.getMeetings(), m -> m.getMeetingId());
-                String evaluationIds = joinIds(g.getEvaluations(), e -> e.getEvaluationId());
+
+                StringBuilder memberIdBuilder = new StringBuilder();
+                boolean firstMember = true;
+                for (Student s : g.getMembers()) {
+                    if (s == null) continue;
+                    if (!firstMember) {
+                        memberIdBuilder.append(",");
+                    }
+                    memberIdBuilder.append(s.getStudentId());
+                    firstMember = false;
+                }
+                String memberIdsStr = memberIdBuilder.toString();
+
+                String supervisorId = DelimitedFiles.EMPTY;
+                if (g.getSupervisor() != null) {
+                    supervisorId = g.getSupervisor().getTeacherId();
+                }
+
+                StringBuilder meetingIdBuilder = new StringBuilder();
+                boolean firstMeeting = true;
+                for (FYPMeeting m : g.getMeetings()) {
+                    if (m == null) continue;
+                    if (!firstMeeting) {
+                        meetingIdBuilder.append(",");
+                    }
+                    meetingIdBuilder.append(m.getMeetingId());
+                    firstMeeting = false;
+                }
+                String meetingIdsStr = meetingIdBuilder.toString();
+
+                StringBuilder evalIdBuilder = new StringBuilder();
+                boolean firstEval = true;
+                for (FYPEvaluation e : g.getEvaluations()) {
+                    if (e == null) continue;
+                    if (!firstEval) {
+                        evalIdBuilder.append(",");
+                    }
+                    evalIdBuilder.append(e.getEvaluationId());
+                    firstEval = false;
+                }
+                String evalIdsStr = evalIdBuilder.toString();
+
                 String description = DelimitedFiles.sanitize(g.getDescription());
                 lines.add(g.getGroupId() + DelimitedFiles.SEPARATOR
                         + DelimitedFiles.sanitize(g.getTitle()) + DelimitedFiles.SEPARATOR
                         + description + DelimitedFiles.SEPARATOR
-                        + (memberIds.isEmpty() ? DelimitedFiles.EMPTY : memberIds) + DelimitedFiles.SEPARATOR
+                        + (memberIdsStr.isEmpty() ? DelimitedFiles.EMPTY : memberIdsStr) + DelimitedFiles.SEPARATOR
                         + supervisorId + DelimitedFiles.SEPARATOR
-                        + (meetingIds.isEmpty() ? DelimitedFiles.EMPTY : meetingIds) + DelimitedFiles.SEPARATOR
-                        + (evaluationIds.isEmpty() ? DelimitedFiles.EMPTY : evaluationIds));
+                        + (meetingIdsStr.isEmpty() ? DelimitedFiles.EMPTY : meetingIdsStr) + DelimitedFiles.SEPARATOR
+                        + (evalIdsStr.isEmpty() ? DelimitedFiles.EMPTY : evalIdsStr));
             }
         }
         DelimitedFiles.writeLines(PATH, lines);
-    }
-
-    private static <T> String joinIds(Collection<T> items, java.util.function.Function<T, String> idExtractor) {
-        if (items == null || items.isEmpty()) return "";
-        StringBuilder sb = new StringBuilder();
-        boolean first = true;
-        for (T item : items) {
-            if (item == null) continue;
-            if (!first) sb.append(",");
-            sb.append(idExtractor.apply(item));
-            first = false;
-        }
-        return sb.toString();
     }
 }

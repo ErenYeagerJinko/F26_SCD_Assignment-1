@@ -1,12 +1,15 @@
 package model;
 
-import java.io.*;
-import java.util.*;
-import java.time.*;
-import exceptions.*;
-import util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.time.LocalDate;
+import exceptions.InvalidFYPGroupException;
+import exceptions.InvalidFYPEvaluationException;
+import exceptions.InvalidUserDataException;
+import util.Logger;
 
 public class PermanentInstructor extends Instructor implements Evaluator {
+    private static int evalCounter = 0;
     private List<FYPGroup> supervisedGroups;
 
     public PermanentInstructor(String teacherId, String name, String email, String phone) throws InvalidUserDataException {
@@ -66,7 +69,7 @@ public class PermanentInstructor extends Instructor implements Evaluator {
         Logger.info("FYP meeting successfully scheduled for group: " + group.getGroupId());
     }
 
-    public void evaluateFYPIdea(FYPGroup group, FYPEvaluation evaluation) throws InvalidFYPGroupException, InvalidFYPEvaluationException {
+    public void evaluateFYP(FYPGroup group, FYPEvaluation evaluation) throws InvalidFYPGroupException, InvalidFYPEvaluationException {
         if (group == null) {
             Logger.error("PermanentInstructor " + getTeacherId() + " failed to evaluate idea: FYP Group is null");
             throw new InvalidFYPGroupException("FYP group cannot be null.");
@@ -76,9 +79,13 @@ public class PermanentInstructor extends Instructor implements Evaluator {
             throw new InvalidFYPEvaluationException("FYP evaluation cannot be null.");
         }
 
-        Logger.info("PermanentInstructor " + getTeacherId() + " evaluating FYP idea for group: " + group.getGroupId());
+        Logger.info("PermanentInstructor " + getTeacherId() + " evaluating FYP for group: " + group.getGroupId());
         group.addEvaluation(evaluation);
-        Logger.info("FYP idea successfully evaluated for group: " + group.getGroupId());
+        Logger.info("FYP successfully evaluated for group: " + group.getGroupId());
+    }
+
+    public void evaluateFYPIdea(FYPGroup group, FYPEvaluation evaluation) throws InvalidFYPGroupException, InvalidFYPEvaluationException {
+        evaluateFYP(group, evaluation);
     }
 
     public void provideFYPFeedback(FYPEvaluation evaluation, String feedback) throws InvalidFYPEvaluationException, InvalidUserDataException {
@@ -102,7 +109,7 @@ public class PermanentInstructor extends Instructor implements Evaluator {
         for (FYPGroup group : supervisedGroups) {
             if (group != null) {
                 try {
-                    FYPEvaluation evaluation = new FYPEvaluation("EVAL-" + System.currentTimeMillis(), LocalDate.now(), 100.0, "Evaluated by " + getName());
+                    FYPEvaluation evaluation = new FYPEvaluation("EVAL-" + (++evalCounter), LocalDate.now(), 100.0, "Evaluated by " + getName());
                     evaluateFYPIdea(group, evaluation);
                 } catch (Exception e) {
                     Logger.error("Error during auto-evaluation for group " + group.getGroupId() + ": " + e.getMessage());

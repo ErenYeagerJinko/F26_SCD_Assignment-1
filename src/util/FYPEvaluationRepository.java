@@ -1,18 +1,22 @@
 package util;
 
-import java.io.*;
-import java.time.*;
-import java.time.format.*;
-import java.util.*;
-import exceptions.*;
-import model.*;
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import exceptions.InvalidUserDataException;
+import model.FYPEvaluation;
 
 public class FYPEvaluationRepository {
     private static final String PATH = "data/fyp_evaluations.txt";
     private static final DateTimeFormatter DATE = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static Map<String, FYPEvaluation> load() throws IOException, InvalidUserDataException {
-        Map<String, FYPEvaluation> evaluations = new LinkedHashMap<>();
+        Map<String, FYPEvaluation> evaluations = new HashMap<>();
         List<String> lines = DelimitedFiles.readLines(PATH);
         for (String line : lines) {
             String[] parts = DelimitedFiles.split(line);
@@ -36,7 +40,11 @@ public class FYPEvaluationRepository {
             }
             String feedback = DelimitedFiles.optional(parts[3]);
 
-            FYPEvaluation evaluation = new FYPEvaluation(id, date, score, feedback != null ? feedback : "");
+            String feedbackStr = "";
+            if (feedback != null) {
+                feedbackStr = feedback;
+            }
+            FYPEvaluation evaluation = new FYPEvaluation(id, date, score, feedbackStr);
             evaluations.put(id, evaluation);
         }
         Logger.info("Loaded " + evaluations.size() + " FYP evaluation(s)");
