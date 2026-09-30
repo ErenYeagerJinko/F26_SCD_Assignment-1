@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import model.*;
 import exceptions.*;
+import util.*;
 import java.util.*;
 
 public class Main {
@@ -14,9 +15,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         
         try {
-            admin = new AcademicOfficeAdmin("A01", "Admin Name", "admin@uni.edu", "1234567890");
+            Map<String, AcademicOfficeAdmin> loadedAdmins = AcademicOfficeAdminRepository.load();
+            if (loadedAdmins.isEmpty()) {
+                admin = new AcademicOfficeAdmin("A01", "Admin Name", "admin@uni.edu", "1234567890");
+                loadedAdmins.put(admin.getAdminId(), admin);
+                AcademicOfficeAdminRepository.save(loadedAdmins.values());
+            } else {
+                admin = loadedAdmins.values().iterator().next();
+            }
+
+            students = new ArrayList<>(NormalStudentRepository.load().values());
+            instructors = new ArrayList<>(PermanentInstructorRepository.load().values());
         } catch (Exception e) {
-            System.out.println("Failed to initialize admin: " + e.getMessage());
+            System.out.println("Failed to initialize system: " + e.getMessage());
             return;
         }
 
@@ -43,6 +54,13 @@ public class Main {
                     break;
                 case "4":
                     running = false;
+                    try {
+                        AcademicOfficeAdminRepository.save(Collections.singletonList(admin));
+                        NormalStudentRepository.save(students);
+                        PermanentInstructorRepository.save(instructors);
+                    } catch(Exception e) {
+                        System.out.println("Error saving data on exit: " + e.getMessage());
+                    }
                     System.out.println("Exiting system. Goodbye!");
                     break;
                 default:
@@ -88,6 +106,7 @@ public class Main {
                         String sPhone = scanner.nextLine();
                         NormalStudent newStudent = new NormalStudent(sId, sName, sEmail, sPhone);
                         students.add(newStudent);
+                        NormalStudentRepository.save(students);
                         System.out.println("Student created successfully.");
                         break;
                     case "3":
@@ -101,6 +120,7 @@ public class Main {
                         String iPhone = scanner.nextLine();
                         PermanentInstructor newInstructor = new PermanentInstructor(iId, iName, iEmail, iPhone);
                         instructors.add(newInstructor);
+                        PermanentInstructorRepository.save(instructors);
                         System.out.println("Instructor created successfully.");
                         break;
                     case "4":
