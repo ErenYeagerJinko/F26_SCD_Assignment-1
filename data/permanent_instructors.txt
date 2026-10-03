@@ -1,0 +1,2 @@
+INS-02|Dr. Sara Ahmed|sara.ahmed@fast.nu.edu.pk|03004445566
+INS-01|Dr. Ali Khan|ali.khan@fast.nu.edu.pk|03001112233

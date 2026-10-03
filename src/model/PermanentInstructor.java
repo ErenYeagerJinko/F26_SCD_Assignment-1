@@ -45,6 +45,10 @@ public class PermanentInstructor extends Instructor implements Evaluator {
         return supervisedGroups;
     }
 
+    public List<FYPGroup> getSupervisedGroups() {
+        return supervisedGroups;
+    }
+
     public String viewFYPGroupDetails(FYPGroup group) throws InvalidFYPGroupException {
         if (group == null) {
             Logger.error("PermanentInstructor " + getTeacherId() + " failed to view FYP group details: Group is null");
@@ -69,6 +73,13 @@ public class PermanentInstructor extends Instructor implements Evaluator {
         Logger.info("FYP meeting successfully scheduled for group: " + group.getGroupId());
     }
 
+    public void addSupervisedGroup(FYPGroup group) {
+        if (group != null && !supervisedGroups.contains(group)) {
+            supervisedGroups.add(group);
+            Logger.info("PermanentInstructor " + getTeacherId() + " added supervised FYP group " + group.getGroupId());
+        }
+    }
+
     public void evaluateFYP(FYPGroup group, FYPEvaluation evaluation) throws InvalidFYPGroupException, InvalidFYPEvaluationException {
         if (group == null) {
             Logger.error("PermanentInstructor " + getTeacherId() + " failed to evaluate idea: FYP Group is null");
@@ -86,6 +97,20 @@ public class PermanentInstructor extends Instructor implements Evaluator {
 
     public void evaluateFYPIdea(FYPGroup group, FYPEvaluation evaluation) throws InvalidFYPGroupException, InvalidFYPEvaluationException {
         evaluateFYP(group, evaluation);
+    }
+
+    public void evaluateFYPIdea(FYPGroup group, String evaluationId, double score, String feedback)
+            throws InvalidFYPGroupException, InvalidFYPEvaluationException, InvalidUserDataException {
+        if (group == null) {
+            Logger.error("PermanentInstructor " + getTeacherId() + " failed to evaluate FYP idea: Group is null");
+            throw new InvalidFYPGroupException("FYP group cannot be null.");
+        }
+        if (evaluationId == null || evaluationId.trim().isEmpty()) {
+            evaluationId = "EVAL-" + (++evalCounter);
+        }
+        FYPEvaluation evaluation = new FYPEvaluation(evaluationId, LocalDate.now(), score, feedback != null ? feedback.trim() : "");
+        evaluateFYPIdea(group, evaluation);
+        Logger.info("PermanentInstructor " + getTeacherId() + " evaluated FYP idea for group " + group.getGroupId() + " with score " + score + " and provided feedback.");
     }
 
     public void provideFYPFeedback(FYPEvaluation evaluation, String feedback) throws InvalidFYPEvaluationException, InvalidUserDataException {

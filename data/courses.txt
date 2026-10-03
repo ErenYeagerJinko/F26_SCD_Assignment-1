@@ -1,4 +1,3 @@
-# courseCode|title|creditHours|prereqCodes (comma-separated, or -)
 CS101|Object Oriented Programming|3|-
 CS201|Data Structures|4|CS101
 SE3005|Software Construction and Development|3|CS201

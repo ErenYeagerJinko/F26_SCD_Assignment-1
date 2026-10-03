@@ -2,3 +2,1120 @@
 [INFO] 2026-09-27 09:57:47 - Administrator initialized with Admin ID: A01
 [INFO] 2026-09-27 09:57:47 - AcademicOfficeAdmin initialized: Admin ID=A01
 [ERROR] 2026-09-27 09:58:26 - Failed to create Person: Invalid email format 'asdsa'
+[INFO] 2026-10-03 15:11:58 - Person initialized: Name=Ali Khan, Email=ali@uni.edu, Phone=03001234567
+[INFO] 2026-10-03 15:11:58 - Student initialized with ID: ST01
+[INFO] 2026-10-03 15:11:58 - NormalStudent initialized: ID=ST01, Name=Ali Khan
+[INFO] 2026-10-03 15:11:58 - Course initialized: Code=CS101, Title=Programming Fundamentals, CreditHours=3
+[INFO] 2026-10-03 15:11:58 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:11:58 - Section initialized: ID=CS101-A, Course=CS101, Capacity=30
+[INFO] 2026-10-03 15:11:58 - Schedule initialized: MONDAY 09:00-10:30 @ Room 101
+[INFO] 2026-10-03 15:11:58 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ Room 101
+[INFO] 2026-10-03 15:11:58 - Student ST01 attempting registration for section CS101-A
+[INFO] 2026-10-03 15:11:58 - Enrollment initialized: ID=ENR-ST01-CS101-A, Student=ST01, Section=CS101-A
+[INFO] 2026-10-03 15:11:58 - Student ST01 enrolled in section CS101-A
+[INFO] 2026-10-03 15:11:58 - Student ST01 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:11:58 - Student ST01 successfully registered for section CS101-A
+[INFO] 2026-10-03 15:11:58 - Person initialized: Name=Dr. Usman, Email=usman@uni.edu, Phone=03007654321
+[INFO] 2026-10-03 15:11:58 - Instructor initialized with Teacher ID: T01
+[INFO] 2026-10-03 15:11:58 - PermanentInstructor initialized: Teacher ID=T01, Name=Dr. Usman
+[INFO] 2026-10-03 15:11:58 - Instructor T01 marking attendance for student ST01 in section CS101-A as PRESENT
+[INFO] 2026-10-03 15:11:58 - Attendance successfully marked for student ST01
+[INFO] 2026-10-03 15:11:58 - Instructor T01 marking attendance for student ST01 in section CS101-A as ABSENT
+[INFO] 2026-10-03 15:11:58 - Attendance successfully marked for student ST01
+[INFO] 2026-10-03 15:11:58 - Student ST01 viewing attendance for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Person initialized: Name=Ali Khan, Email=ali@uni.edu, Phone=03001234567
+[INFO] 2026-10-03 15:13:35 - Student initialized with ID: ST01
+[INFO] 2026-10-03 15:13:35 - NormalStudent initialized: ID=ST01, Name=Ali Khan
+[INFO] 2026-10-03 15:13:35 - Course initialized: Code=CS101, Title=Programming Fundamentals, CreditHours=3
+[INFO] 2026-10-03 15:13:35 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:13:35 - Section initialized: ID=CS101-A, Course=CS101, Capacity=30
+[INFO] 2026-10-03 15:13:35 - Schedule initialized: MONDAY 09:00-10:30 @ Room 101
+[INFO] 2026-10-03 15:13:35 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ Room 101
+[INFO] 2026-10-03 15:13:35 - Student ST01 attempting registration for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Enrollment initialized: ID=ENR-ST01-CS101-A, Student=ST01, Section=CS101-A
+[INFO] 2026-10-03 15:13:35 - Student ST01 enrolled in section CS101-A
+[INFO] 2026-10-03 15:13:35 - Student ST01 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:13:35 - Student ST01 successfully registered for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Person initialized: Name=Dr. Usman, Email=usman@uni.edu, Phone=03007654321
+[INFO] 2026-10-03 15:13:35 - Instructor initialized with Teacher ID: T01
+[INFO] 2026-10-03 15:13:35 - PermanentInstructor initialized: Teacher ID=T01, Name=Dr. Usman
+[INFO] 2026-10-03 15:13:35 - Instructor T01 marking attendance for student ST01 in section CS101-A as PRESENT
+[INFO] 2026-10-03 15:13:35 - Attendance record added for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Attendance successfully marked for student ST01
+[INFO] 2026-10-03 15:13:35 - Instructor T01 marking attendance for student ST01 in section CS101-A as ABSENT
+[INFO] 2026-10-03 15:13:35 - Attendance record added for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Attendance successfully marked for student ST01
+[INFO] 2026-10-03 15:13:35 - Student ST01 viewing attendance for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Student ST01 calculated attendance percentage for section CS101-A: 50.00%
+[INFO] 2026-10-03 15:13:35 - Person initialized: Name=Sara Ahmed, Email=sara@uni.edu, Phone=03009998888
+[INFO] 2026-10-03 15:13:35 - Student initialized with ID: TA01
+[INFO] 2026-10-03 15:13:35 - TeachingAssistant initialized with ID: TA01 and assigned section: CS101-A
+[INFO] 2026-10-03 15:13:35 - Assigned section for TA TA01 updated to: CS101-A
+[INFO] 2026-10-03 15:13:35 - Teaching assistant TA01 assigned to section CS101-A
+[INFO] 2026-10-03 15:13:35 - TA TA01 viewing enrolled students for assigned section CS101-A
+[INFO] 2026-10-03 15:13:35 - TA TA01 creating assignment ID: ASN-01 ('Quiz 1') for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Assignment ASN-01 linked to section CS101-A
+[INFO] 2026-10-03 15:13:35 - Assignment created: ASN-01 (Quiz 1) for section CS101-A by TA TA01
+[INFO] 2026-10-03 15:13:35 - Assignment ASN-01 successfully created by TA TA01
+[INFO] 2026-10-03 15:13:35 - Student ST01 viewing assignments for section CS101-A
+[INFO] 2026-10-03 15:13:35 - Student ST01 viewing all assignments for enrolled sections
+[INFO] 2026-10-03 15:13:35 - Student ST01 submitting assignment ID: ASN-01
+[INFO] 2026-10-03 15:13:35 - Assignment ASN-01: deadline check = false
+[INFO] 2026-10-03 15:13:35 - Submission created: SUB-1 for assignment ASN-01 by student ST01
+[INFO] 2026-10-03 15:13:35 - Assignment ASN-01: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:13:35 - Student ST01 successfully submitted assignment ID: ASN-01
+[INFO] 2026-10-03 15:13:35 - TA TA01 evaluating submission ID SUB-1 with marks: 18.5
+[INFO] 2026-10-03 15:13:35 - Submission SUB-1: marks assigned = 18.5
+[INFO] 2026-10-03 15:13:35 - Submission ID SUB-1 successfully evaluated by TA TA01
+[INFO] 2026-10-03 15:13:35 - TA TA01 providing feedback for submission ID: SUB-1
+[INFO] 2026-10-03 15:13:35 - Feedback created: FB-1 on 2026-10-03
+[INFO] 2026-10-03 15:13:35 - Submission SUB-1: feedback added
+[INFO] 2026-10-03 15:13:35 - Feedback successfully added to submission ID: SUB-1
+[INFO] 2026-10-03 15:13:35 - TA TA01 checking late submissions for assignment ASN-01
+[INFO] 2026-10-03 15:13:35 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:13:35 - Section initialized: ID=CS101-B, Course=CS101, Capacity=30
+[INFO] 2026-10-03 15:13:35 - Schedule initialized: MONDAY 09:30-11:00 @ Room 102
+[INFO] 2026-10-03 15:13:35 - Schedule assigned to section CS101-B: MONDAY 09:30-11:00 @ Room 102
+[INFO] 2026-10-03 15:13:35 - Request initialized: ID=REQ-01, Priority=5
+[INFO] 2026-10-03 15:13:35 - CourseClashRequest initialized: REQ-01 between CS101-A and CS101-B
+[INFO] 2026-10-03 15:13:35 - Student ST01 submitting verified course clash request: REQ-01
+[INFO] 2026-10-03 15:13:35 - Request REQ-01 submitted successfully
+[INFO] 2026-10-03 15:13:35 - Course clash request REQ-01 submitted successfully
+[INFO] 2026-10-03 15:13:35 - Student ST01 viewing submitted requests (count: 1)
+[INFO] 2026-10-03 15:13:35 - Added section CS101-C to course CS101
+[INFO] 2026-10-03 15:13:35 - Section initialized: ID=CS101-C, Course=CS101, Capacity=30
+[INFO] 2026-10-03 15:13:35 - Schedule initialized: TUESDAY 09:00-10:30 @ Room 103
+[INFO] 2026-10-03 15:13:35 - Schedule assigned to section CS101-C: TUESDAY 09:00-10:30 @ Room 103
+[INFO] 2026-10-03 15:13:35 - Request initialized: ID=REQ-02, Priority=1
+[INFO] 2026-10-03 15:13:35 - CourseClashRequest initialized: REQ-02 between CS101-A and CS101-C
+[ERROR] 2026-10-03 15:13:35 - Clash request rejected for student ST01: Sections CS101-A and CS101-C do not have a schedule clash
+[INFO] 2026-10-03 15:13:35 - FYPGroup created: GRP-01 (AI Tutor)
+[INFO] 2026-10-03 15:13:35 - PermanentInstructor T01 added supervised FYP group GRP-01
+[INFO] 2026-10-03 15:13:35 - FYPGroup GRP-01: supervisor assigned T01
+[INFO] 2026-10-03 15:13:35 - PermanentInstructor T01 viewing supervised FYP groups
+[INFO] 2026-10-03 15:13:35 - FYPEvaluation created: EVAL-01 with score 92.0
+[INFO] 2026-10-03 15:13:35 - PermanentInstructor T01 evaluating FYP for group: GRP-01
+[INFO] 2026-10-03 15:13:35 - FYPGroup GRP-01: evaluation added EVAL-01
+[INFO] 2026-10-03 15:13:35 - FYP successfully evaluated for group: GRP-01
+[INFO] 2026-10-03 15:13:35 - PermanentInstructor T01 evaluated FYP idea for group GRP-01 with score 92.0 and provided feedback.
+[INFO] 2026-10-03 15:31:31 - SystemContext: Starting complete system initialization and data load...
+[WARNING] 2026-10-03 15:31:31 - Data file not found: data/academic_office_admins.txt
+[INFO] 2026-10-03 15:31:31 - Loaded 0 academic office admin(s)
+[INFO] 2026-10-03 15:31:31 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:31:31 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:31:31 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:31:31 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:31:31 - SystemContext: Seeded default admin A01
+[WARNING] 2026-10-03 15:31:31 - Data file not found: data/normal_students.txt
+[INFO] 2026-10-03 15:31:31 - Loaded 0 normal student(s)
+[INFO] 2026-10-03 15:31:31 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:31:31 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:31:31 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:31:31 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:31:31 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:31:31 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:31:31 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:31:31 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:31:31 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:31:32 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:31:32 - SystemContext: Seeded default students ST-001, ST-002, ST-003
+[WARNING] 2026-10-03 15:31:32 - Data file not found: data/permanent_instructors.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 permanent instructor(s)
+[INFO] 2026-10-03 15:31:32 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:31:32 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:31:32 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:31:32 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:31:32 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:31:32 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:31:32 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:31:32 - SystemContext: Seeded default permanent instructors INS-01, INS-02
+[WARNING] 2026-10-03 15:31:32 - Data file not found: data/visiting_instructors.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 visiting instructor(s)
+[INFO] 2026-10-03 15:31:32 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:31:32 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:31:32 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:31:32 - SystemContext: Seeded default visiting instructor VIS-01
+[WARNING] 2026-10-03 15:31:32 - Data file not found: data/teaching_assistants.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 teaching assistant(s)
+[INFO] 2026-10-03 15:31:32 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:31:32 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:31:32 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:31:32 - SystemContext: Seeded default teaching assistant TA-001
+[INFO] 2026-10-03 15:31:32 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:31:32 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:31:32 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:31:32 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:31:32 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:31:32 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:31:32 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:31:32 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:31:32 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:31:32 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:31:32 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:31:32 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:31:32 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:31:32 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:31:32 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:31:32 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:31:32 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:31:32 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:31:32 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:31:32 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:31:32 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:31:32 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:31:32 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:31:32 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:31:32 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 enrollment(s)
+[INFO] 2026-10-03 15:31:32 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:31:32 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:31:32 - Student ST-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:31:32 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 assignment(s)
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 submission(s)
+[INFO] 2026-10-03 15:31:32 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:31:32 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:31:32 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:31:32 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:31:32 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:31:32 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:31:32 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:31:32 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:31:32 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:31:32 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:31:32 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:31:32 - Student ST-001 attempting registration for section CS101-A
+[INFO] 2026-10-03 15:31:32 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:31:32 - Student ST-001 enrolled in section CS101-A
+[INFO] 2026-10-03 15:31:32 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:31:32 - Student ST-001 successfully registered for section CS101-A
+[INFO] 2026-10-03 15:31:32 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:31:32 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:31:32 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:31:32 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:31:32 - Student ST-001 submitting assignment ID: ASG-101
+[INFO] 2026-10-03 15:31:32 - Assignment ASG-101: deadline check = false
+[INFO] 2026-10-03 15:31:32 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:31:32 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:31:32 - Student ST-001 successfully submitted assignment ID: ASG-101
+[INFO] 2026-10-03 15:31:32 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:31:32 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:31:32 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:31:32 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:44:23 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:44:23 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:44:23 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:44:23 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:44:23 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:44:23 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:44:23 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:44:23 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:44:23 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:44:23 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:44:23 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:44:23 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:44:23 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:44:23 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:44:23 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:44:23 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:44:23 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:44:23 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:44:23 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:44:23 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:44:23 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:44:23 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:44:23 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:44:23 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:23 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:44:23 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:23 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:23 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:44:23 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:44:23 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:44:23 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:44:23 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:44:23 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:44:23 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:44:23 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:44:23 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:44:23 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:44:23 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:44:23 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:23 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:23 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:44:23 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:44:23 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:23 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:23 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:44:23 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:44:23 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:23 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:23 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:44:23 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:44:23 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:23 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:23 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:44:23 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:44:23 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:44:23 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:44:23 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:44:23 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:23 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:23 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:44:23 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:23 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:44:23 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:44:23 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:44:23 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:44:23 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:44:23 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:44:23 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:44:23 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:44:23 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:44:23 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:44:23 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:44:23 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:44:23 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:44:23 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:23 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:44:23 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:44:23 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:23 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:44:23 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:23 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:44:23 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:23 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:44:23 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:23 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:44:23 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:44:23 - Student ST-003 viewing all assignments for enrolled sections
+[ERROR] 2026-10-03 15:44:23 - TA TA-001 attempted to view enrolled students without an assigned section
+[ERROR] 2026-10-03 15:44:23 - TA Action Failed: Teaching Assistant is not assigned to any section.
+[INFO] 2026-10-03 15:44:23 - Instructor INS-02 viewing assigned courses
+[INFO] 2026-10-03 15:44:23 - PermanentInstructor INS-02 viewing supervised FYP groups
+[INFO] 2026-10-03 15:44:23 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:44:23 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:23 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:23 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:44:33 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:44:33 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:33 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:44:33 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:44:33 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:44:33 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:44:33 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:44:33 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:44:33 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:44:33 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:44:33 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:44:33 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:44:33 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:44:33 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:44:33 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:44:33 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:44:33 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:44:33 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:33 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:44:33 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:44:33 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:44:33 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:44:33 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:44:33 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:44:33 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:44:34 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:34 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:44:34 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:44:34 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:44:34 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:44:34 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:34 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:44:34 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:34 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:34 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:44:34 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:44:34 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:44:34 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:44:34 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:44:34 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:44:34 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:44:34 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:44:34 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:44:34 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:44:34 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:44:34 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:34 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:34 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:44:34 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:44:34 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:34 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:34 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:44:34 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:44:34 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:34 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:34 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:44:34 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:44:34 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:34 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:34 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:44:34 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:44:34 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:44:34 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:44:34 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:44:34 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:34 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:34 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:44:34 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:34 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:44:34 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:44:34 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:44:34 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:44:34 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:44:34 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:44:34 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:44:34 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:44:34 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:44:34 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:44:34 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:44:34 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:44:34 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:44:34 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:34 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:44:34 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:44:34 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:34 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:44:34 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:34 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:44:34 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:34 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:44:34 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:34 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:44:34 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:44:34 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:44:34 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:34 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:34 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:44:44 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:44:44 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:44 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:44:44 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:44:44 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:44:45 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:44:45 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:44:45 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:44:45 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:44:45 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:44:45 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:44:45 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:44:45 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:44:45 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:44:45 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:44:45 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:44:45 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:44:45 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:44:45 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:44:45 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:44:45 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:44:45 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:44:45 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:44:45 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:44:45 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:45 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:44:45 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:45 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:45 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:44:45 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:44:45 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:44:45 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:44:45 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:44:45 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:44:45 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:44:45 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:44:45 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:44:45 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:44:45 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:44:45 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:45 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:45 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:44:45 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:44:45 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:45 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:45 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:44:45 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:44:45 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:45 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:45 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:44:45 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:44:45 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:45 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:45 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:44:45 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:44:45 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:44:45 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:44:45 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:44:45 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:45 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:45 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:44:45 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:45 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:44:45 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:44:45 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:44:45 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:44:45 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:44:45 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:44:45 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:44:45 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:44:45 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:44:45 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:44:45 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:44:45 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:44:45 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:44:45 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:45 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:44:45 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:44:45 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:45 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:44:45 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:45 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:44:45 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:45 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:44:45 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:45 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:44:45 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:44:45 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:44:45 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:45 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:45 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:44:54 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:44:54 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:44:54 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:44:54 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:44:54 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:44:54 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:44:54 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:44:54 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:44:54 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:44:54 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:44:54 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:44:54 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:44:54 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:44:54 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:44:54 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:44:54 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:44:54 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:44:54 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:44:54 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:44:54 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:44:54 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:44:54 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:44:54 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:44:54 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:54 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:44:54 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:54 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:44:54 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:44:54 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:44:54 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:44:54 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:44:54 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:44:54 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:44:54 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:44:54 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:44:54 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:44:54 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:44:54 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:44:54 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:54 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:44:54 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:44:54 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:44:54 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:54 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:44:54 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:44:54 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:44:54 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:54 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:44:54 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:44:54 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:44:54 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:54 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:44:54 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:44:54 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:44:54 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:44:54 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:44:54 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:44:54 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:54 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:54 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:44:54 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:44:54 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:44:54 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:44:54 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:44:54 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:44:54 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:44:54 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:44:54 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:44:54 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:44:54 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:44:54 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:44:54 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:44:54 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:44:54 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:44:54 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:54 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:44:54 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:44:54 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:44:54 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:44:54 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:54 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:44:54 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:54 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:44:54 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:54 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:44:54 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:44:54 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:44:54 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:44:54 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:44:55 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:44:55 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:44:55 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:44:55 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:44:55 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:44:55 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:44:55 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:46:23 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:46:23 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:46:23 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:46:23 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:46:23 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:46:23 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:46:23 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:46:23 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:46:23 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:46:23 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:46:23 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:46:23 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:46:23 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:46:23 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:46:23 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:46:23 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:46:23 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:46:23 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:46:23 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:46:23 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:46:23 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:46:23 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:46:23 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:46:23 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:46:23 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:46:23 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:46:23 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:46:23 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:46:23 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:46:23 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:46:23 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:46:23 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:46:23 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:46:23 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:46:23 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:46:23 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:46:23 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:46:23 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:46:23 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:46:23 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:46:23 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:46:23 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:46:23 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:46:23 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:46:23 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:46:23 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:46:23 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:46:23 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:46:23 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:46:23 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:46:23 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:46:23 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:46:23 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:46:23 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:46:23 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:46:23 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:46:23 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:46:23 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:46:23 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:46:23 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:46:23 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:46:23 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:46:23 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:46:23 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:46:23 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:46:23 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:46:23 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:46:23 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:46:23 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:46:23 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:46:23 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:46:23 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:46:23 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:46:23 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:46:23 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:46:23 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:46:23 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:46:23 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:46:23 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:46:23 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:46:23 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:46:23 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:46:23 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:46:23 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:46:23 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:46:23 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:46:23 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:46:23 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:46:23 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:46:24 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:46:24 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:46:24 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:46:44 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:46:44 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:46:44 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:46:44 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:46:44 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:46:44 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:46:44 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:46:44 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:46:44 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:46:44 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:46:44 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:46:44 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:46:44 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:46:44 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:46:44 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:46:44 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:46:44 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:46:44 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:46:44 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:46:44 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:46:44 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:46:44 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:46:44 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:46:44 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:46:44 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:46:44 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:46:44 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:46:44 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:46:44 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:46:44 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:46:44 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:46:44 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:46:44 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:46:44 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:46:44 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:46:44 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:46:44 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:46:44 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:46:44 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:46:44 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:46:44 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:46:44 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:46:44 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:46:44 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:46:44 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:46:44 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:46:44 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:46:44 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:46:44 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:46:44 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:46:44 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:46:44 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:46:44 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:46:44 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:46:44 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:46:44 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:46:44 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:46:44 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:46:44 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:46:44 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:46:44 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:46:44 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:46:44 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:46:44 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:46:44 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:46:44 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:46:44 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:46:44 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:46:44 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:46:44 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:46:44 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:46:44 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:46:44 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:46:44 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:46:44 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:46:44 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:46:44 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:46:44 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:46:44 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:46:44 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:46:44 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:46:44 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:46:44 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:46:44 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:46:44 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:46:44 - SystemContext: System load completed successfully.
+[WARNING] 2026-10-03 15:46:44 - Security check blocked instructor VIS-01: Visiting Instructors are NOT authorized to assign Teaching Assistants.
+[WARNING] 2026-10-03 15:46:44 - Security check blocked instructor VIS-01: Visiting Instructors are NOT authorized to supervise FYP Groups.
+[INFO] 2026-10-03 15:46:44 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:46:44 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:46:44 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:46:44 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:47:00 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:47:00 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:47:00 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:47:00 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:47:00 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:47:00 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:47:00 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:47:00 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:47:00 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:47:00 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:47:00 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:47:00 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:47:00 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:47:00 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:47:00 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:47:00 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:47:00 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:47:00 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:47:00 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:47:00 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:47:00 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:47:00 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:47:00 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:47:00 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:47:00 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:47:00 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:47:00 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:47:00 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:47:00 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:47:00 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:47:00 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:47:00 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:47:00 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:47:00 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:47:00 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:47:00 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:47:00 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:47:00 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:47:00 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:47:00 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:47:00 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:47:00 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:47:00 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:47:00 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:47:00 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:47:00 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:47:00 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:47:00 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:47:00 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:47:00 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:47:00 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:47:00 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:47:00 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:47:00 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:47:00 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:47:00 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:47:00 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:47:00 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:47:00 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:47:00 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:47:00 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:47:00 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:47:00 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:47:00 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:47:00 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:47:00 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:47:00 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:47:00 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:47:00 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:47:00 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:47:00 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:47:00 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:47:00 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:47:00 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:47:00 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:47:00 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:47:00 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:47:00 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:47:00 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:47:00 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:47:00 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:47:00 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:47:00 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:47:00 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:47:00 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:47:00 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:47:00 - Student ST-001 viewing enrolled courses
+[INFO] 2026-10-03 15:47:00 - Student ST-001 viewing timetable
+[INFO] 2026-10-03 15:47:00 - Student ST-001 viewing all assignments for enrolled sections
+[INFO] 2026-10-03 15:47:00 - Instructor INS-01 viewing assigned courses
+[INFO] 2026-10-03 15:47:00 - PermanentInstructor INS-01 viewing supervised FYP groups
+[INFO] 2026-10-03 15:47:00 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:47:00 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:47:00 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:47:01 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:47:01 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:47:01 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:47:01 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:47:01 - SystemContext: Complete system persistence completed.
+[INFO] 2026-10-03 15:53:31 - SystemContext: Starting complete system initialization and data load...
+[INFO] 2026-10-03 15:53:31 - Read 1 record(s) from data/academic_office_admins.txt
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Admin Office, Email=admin@fast.nu.edu.pk, Phone=03001234567
+[INFO] 2026-10-03 15:53:31 - Administrator initialized with Admin ID: A01
+[INFO] 2026-10-03 15:53:31 - AcademicOfficeAdmin initialized: Admin ID=A01
+[INFO] 2026-10-03 15:53:31 - Loaded 1 academic office admin(s)
+[INFO] 2026-10-03 15:53:31 - Read 3 record(s) from data/normal_students.txt
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Zain Malik, Email=zain@student.fast.nu.edu.pk, Phone=03333333333
+[INFO] 2026-10-03 15:53:31 - Student initialized with ID: ST-003
+[INFO] 2026-10-03 15:53:31 - NormalStudent initialized: ID=ST-003, Name=Zain Malik
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Ayesha Noor, Email=ayesha@student.fast.nu.edu.pk, Phone=03222222222
+[INFO] 2026-10-03 15:53:31 - Student initialized with ID: ST-002
+[INFO] 2026-10-03 15:53:31 - NormalStudent initialized: ID=ST-002, Name=Ayesha Noor
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Hamza Bilal, Email=hamza@student.fast.nu.edu.pk, Phone=03111111111
+[INFO] 2026-10-03 15:53:31 - Student initialized with ID: ST-001
+[INFO] 2026-10-03 15:53:31 - NormalStudent initialized: ID=ST-001, Name=Hamza Bilal
+[INFO] 2026-10-03 15:53:31 - Loaded 3 normal student(s)
+[INFO] 2026-10-03 15:53:31 - Read 2 record(s) from data/permanent_instructors.txt
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Dr. Sara Ahmed, Email=sara.ahmed@fast.nu.edu.pk, Phone=03004445566
+[INFO] 2026-10-03 15:53:31 - Instructor initialized with Teacher ID: INS-02
+[INFO] 2026-10-03 15:53:31 - PermanentInstructor initialized: Teacher ID=INS-02, Name=Dr. Sara Ahmed
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Dr. Ali Khan, Email=ali.khan@fast.nu.edu.pk, Phone=03001112233
+[INFO] 2026-10-03 15:53:31 - Instructor initialized with Teacher ID: INS-01
+[INFO] 2026-10-03 15:53:31 - PermanentInstructor initialized: Teacher ID=INS-01, Name=Dr. Ali Khan
+[INFO] 2026-10-03 15:53:31 - Loaded 2 permanent instructor(s)
+[INFO] 2026-10-03 15:53:31 - Read 1 record(s) from data/visiting_instructors.txt
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Mr. Usman Tariq, Email=usman.tariq@fast.nu.edu.pk, Phone=03007778899
+[INFO] 2026-10-03 15:53:31 - Instructor initialized with Teacher ID: VIS-01
+[INFO] 2026-10-03 15:53:31 - VisitingInstructor initialized: Teacher ID=VIS-01, Name=Mr. Usman Tariq
+[INFO] 2026-10-03 15:53:31 - Loaded 1 visiting instructor(s)
+[INFO] 2026-10-03 15:53:31 - Read 1 record(s) from data/teaching_assistants.txt
+[INFO] 2026-10-03 15:53:31 - Person initialized: Name=Bilal Tariq, Email=bilal.ta@fast.nu.edu.pk, Phone=03444444444
+[INFO] 2026-10-03 15:53:31 - Student initialized with ID: TA-001
+[INFO] 2026-10-03 15:53:31 - TeachingAssistant initialized with ID: TA-001
+[INFO] 2026-10-03 15:53:31 - Loaded 1 teaching assistant(s)
+[INFO] 2026-10-03 15:53:31 - Read 3 record(s) from data/courses.txt
+[INFO] 2026-10-03 15:53:31 - Course initialized: Code=CS101, Title=Object Oriented Programming, CreditHours=3
+[INFO] 2026-10-03 15:53:31 - Course initialized: Code=CS201, Title=Data Structures, CreditHours=4
+[INFO] 2026-10-03 15:53:31 - Course initialized: Code=SE3005, Title=Software Construction and Development, CreditHours=3
+[INFO] 2026-10-03 15:53:31 - Added prerequisite CS101 to course CS201
+[INFO] 2026-10-03 15:53:31 - Added prerequisite CS201 to course SE3005
+[INFO] 2026-10-03 15:53:31 - Loaded 3 course(s)
+[INFO] 2026-10-03 15:53:31 - Read 4 record(s) from data/sections.txt
+[INFO] 2026-10-03 15:53:31 - Added section CS101-A to course CS101
+[INFO] 2026-10-03 15:53:31 - Section initialized: ID=CS101-A, Course=CS101, Capacity=40
+[INFO] 2026-10-03 15:53:31 - Schedule initialized: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:53:31 - Schedule assigned to section CS101-A: MONDAY 09:00-10:30 @ C-401
+[INFO] 2026-10-03 15:53:31 - Added section CS101-B to course CS101
+[INFO] 2026-10-03 15:53:31 - Section initialized: ID=CS101-B, Course=CS101, Capacity=35
+[INFO] 2026-10-03 15:53:31 - Schedule initialized: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:53:31 - Schedule assigned to section CS101-B: WEDNESDAY 11:00-12:30 @ C-402
+[INFO] 2026-10-03 15:53:31 - Added section CS201-A to course CS201
+[INFO] 2026-10-03 15:53:31 - Section initialized: ID=CS201-A, Course=CS201, Capacity=30
+[INFO] 2026-10-03 15:53:31 - Schedule initialized: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:53:31 - Schedule assigned to section CS201-A: TUESDAY 09:00-10:30 @ B-210
+[INFO] 2026-10-03 15:53:31 - Added section SE3005-A to course SE3005
+[INFO] 2026-10-03 15:53:31 - Section initialized: ID=SE3005-A, Course=SE3005, Capacity=25
+[INFO] 2026-10-03 15:53:31 - Schedule initialized: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:53:31 - Schedule assigned to section SE3005-A: THURSDAY 14:00-15:30 @ A-101
+[INFO] 2026-10-03 15:53:31 - Loaded 4 section(s)
+[INFO] 2026-10-03 15:53:31 - Read 1 record(s) from data/enrollments.txt
+[INFO] 2026-10-03 15:53:31 - Enrollment initialized: ID=ENR-ST-001-CS101-A, Student=ST-001, Section=CS101-A
+[INFO] 2026-10-03 15:53:31 - Restored enrollment ENR-ST-001-CS101-A for section CS101-A
+[INFO] 2026-10-03 15:53:31 - Loaded 1 enrollment(s)
+[INFO] 2026-10-03 15:53:31 - Student ST-003 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:53:31 - Student ST-002 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:53:31 - Student ST-001 recalculated total credit hours: 3
+[INFO] 2026-10-03 15:53:31 - Student TA-001 recalculated total credit hours: 0
+[INFO] 2026-10-03 15:53:31 - Read 1 record(s) from data/assignments.txt
+[INFO] 2026-10-03 15:53:31 - Assignment ASG-101 linked to section CS101-A
+[INFO] 2026-10-03 15:53:31 - Assignment created: ASG-101 (Homework 1) for section CS101-A by TA TA-001
+[INFO] 2026-10-03 15:53:31 - Loaded 1 assignment(s)
+[INFO] 2026-10-03 15:53:31 - Read 0 record(s) from data/feedback.txt
+[INFO] 2026-10-03 15:53:31 - Loaded 0 feedback(s)
+[INFO] 2026-10-03 15:53:31 - Read 1 record(s) from data/submissions.txt
+[INFO] 2026-10-03 15:53:31 - Submission created: SUB-1 for assignment ASG-101 by student ST-001
+[INFO] 2026-10-03 15:53:31 - Loaded 1 submission(s)
+[INFO] 2026-10-03 15:53:31 - Assignment ASG-101: submission SUB-1 added (validated)
+[INFO] 2026-10-03 15:53:31 - Read 2 record(s) from data/requests.txt
+[INFO] 2026-10-03 15:53:31 - Request initialized: ID=REQ-001, Priority=2
+[INFO] 2026-10-03 15:53:31 - GenericRequest initialized: REQ-001, Category=OTHER
+[INFO] 2026-10-03 15:53:31 - Request REQ-001 restored from storage with status PENDING
+[INFO] 2026-10-03 15:53:31 - Request initialized: ID=REQ-002, Priority=5
+[INFO] 2026-10-03 15:53:31 - CourseClashRequest initialized: REQ-002 between CS101-A and CS201-A
+[INFO] 2026-10-03 15:53:31 - Request REQ-002 restored from storage with status PENDING
+[INFO] 2026-10-03 15:53:31 - Loaded 2 request(s)
+[INFO] 2026-10-03 15:53:31 - Read 0 record(s) from data/fyp_meetings.txt
+[INFO] 2026-10-03 15:53:31 - Loaded 0 FYP meeting(s)
+[INFO] 2026-10-03 15:53:31 - Read 0 record(s) from data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:53:31 - Loaded 0 FYP evaluation(s)
+[INFO] 2026-10-03 15:53:31 - Read 0 record(s) from data/fyp_groups.txt
+[INFO] 2026-10-03 15:53:31 - Loaded 0 FYP group(s)
+[INFO] 2026-10-03 15:53:31 - SystemContext: System load completed successfully.
+[INFO] 2026-10-03 15:53:40 - SystemContext: Starting complete system persistence...
+[INFO] 2026-10-03 15:53:40 - Wrote 1 record(s) to data/academic_office_admins.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 3 record(s) to data/normal_students.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 2 record(s) to data/permanent_instructors.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 1 record(s) to data/visiting_instructors.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 1 record(s) to data/teaching_assistants.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 3 record(s) to data/courses.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 4 record(s) to data/sections.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 1 record(s) to data/enrollments.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 1 record(s) to data/assignments.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 0 record(s) to data/feedback.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 1 record(s) to data/submissions.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 2 record(s) to data/requests.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 0 record(s) to data/fyp_meetings.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 0 record(s) to data/fyp_evaluations.txt
+[INFO] 2026-10-03 15:53:40 - Wrote 0 record(s) to data/fyp_groups.txt
+[INFO] 2026-10-03 15:53:40 - SystemContext: Complete system persistence completed.

@@ -21,6 +21,9 @@ public class Assignment extends Assessment {
         this.section = section;
         this.createdBy = createdBy;
         this.submissions = new ArrayList<>();
+        if (section != null) {
+            section.addAssignment(this);
+        }
 
         String sectionInfo = "null";
         if (section != null) {
@@ -39,6 +42,9 @@ public class Assignment extends Assessment {
 
     public void setSection(Section section) {
         this.section = section;
+        if (section != null) {
+            section.addAssignment(this);
+        }
     }
 
     public TeachingAssistant getCreatedBy() {

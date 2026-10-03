@@ -105,6 +105,7 @@ public abstract class Instructor extends Person {
 
         Logger.info("Instructor " + teacherId + " marking attendance for student " + student.getStudentId() + " in section " + section.getSectionId() + " as " + status);
         Attendance attendance = new Attendance(student, section, LocalDate.now(), status);
+        section.addAttendanceRecord(attendance);
         Logger.info("Attendance successfully marked for student " + student.getStudentId());
         return attendance;
     }
