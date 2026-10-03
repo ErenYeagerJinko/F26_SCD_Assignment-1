@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalDate;
 import exceptions.UnauthorizedActionException;
@@ -110,6 +111,37 @@ public class TeachingAssistant extends Student implements Evaluator {
         Feedback feedback = new Feedback("FB-" + (++feedbackCounter), comments.trim(), LocalDate.now());
         submission.addFeedback(feedback);
         Logger.info("Feedback successfully added to submission ID: " + submission.getSubmissionId());
+    }
+
+    public void evaluateSubmission(Submission submission, double marks, String comments) throws AssessmentException, InvalidUserDataException {
+        evaluateSubmission(submission, marks);
+        if (comments != null && !comments.trim().isEmpty()) {
+            giveFeedback(submission, comments);
+        }
+    }
+
+    public List<Student> viewEnrolledStudents() throws UnauthorizedActionException {
+        if (assignedSection == null) {
+            Logger.error("TA " + getStudentId() + " attempted to view enrolled students without an assigned section");
+            throw new UnauthorizedActionException("Teaching Assistant is not assigned to any section.");
+        }
+        Logger.info("TA " + getStudentId() + " viewing enrolled students for assigned section " + assignedSection.getSectionId());
+        return assignedSection.getEnrolledStudents();
+    }
+
+    public List<Submission> checkLateSubmissions(Assignment assignment) throws AssessmentException, InvalidUserDataException {
+        if (assignment == null) {
+            Logger.error("TA " + getStudentId() + " failed to check late submissions: Assignment is null");
+            throw new InvalidUserDataException("Assignment cannot be null.");
+        }
+        Logger.info("TA " + getStudentId() + " checking late submissions for assignment " + assignment.getId());
+        List<Submission> lateSubmissions = new ArrayList<>();
+        for (Submission s : assignment.getSubmissions()) {
+            if (s != null && s.isLate()) {
+                lateSubmissions.add(s);
+            }
+        }
+        return lateSubmissions;
     }
 
     @Override

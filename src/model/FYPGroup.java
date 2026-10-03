@@ -1,6 +1,5 @@
 package model;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import util.Logger;
@@ -117,6 +116,7 @@ public class FYPGroup {
             throw new InvalidFYPGroupException("Cannot assign null supervisor");
         }
         this.supervisor = supervisor;
+        supervisor.addSupervisedGroup(this);
         Logger.info("FYPGroup " + groupId + ": supervisor assigned " + supervisor.getTeacherId());
     }
 

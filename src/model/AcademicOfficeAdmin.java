@@ -1,6 +1,5 @@
 package model;
 
-import java.io.*;
 import java.util.*;
 import enums.*;
 import exceptions.*;
@@ -150,6 +149,36 @@ public class AcademicOfficeAdmin extends Administrator {
         Logger.info("Admin " + getAdminId() + " rejecting request ID: " + request.getRequestId());
         request.setStatus(RequestStatus.REJECTED);
         Logger.info("Request " + request.getRequestId() + " rejected successfully");
+    }
+
+    public List<Course> getManagedCourses() {
+        return managedCourses;
+    }
+
+    public List<Section> getManagedSections() {
+        return managedSections;
+    }
+
+    public List<Request> getManagedRequests() {
+        return managedRequests;
+    }
+
+    public void addManagedCourse(Course course) {
+        if (course != null && !managedCourses.contains(course)) {
+            managedCourses.add(course);
+        }
+    }
+
+    public void addManagedSection(Section section) {
+        if (section != null && !managedSections.contains(section)) {
+            managedSections.add(section);
+        }
+    }
+
+    public void addManagedRequest(Request request) {
+        if (request != null && !managedRequests.contains(request)) {
+            managedRequests.add(request);
+        }
     }
 
     @Override

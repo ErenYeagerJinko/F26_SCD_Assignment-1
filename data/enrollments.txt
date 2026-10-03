@@ -1,1 +1,1 @@
-# enrollmentId|studentId|sectionId|enrollmentDate|status
+ENR-ST-001-CS101-A|ST-001|CS101-A|2026-10-03|ACTIVE

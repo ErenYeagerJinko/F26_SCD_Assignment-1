@@ -15,6 +15,7 @@ public class Section {
     private Schedule schedule;
     private List<Enrollment> enrollments;
     private List<Attendance> attendanceRecords;
+    private List<Assignment> assignments;
 
     public Section(String sectionId, int capacity, Course course) throws InvalidUserDataException {
         if (sectionId == null || sectionId.trim().isEmpty()) {
@@ -35,6 +36,7 @@ public class Section {
         this.course = course;
         this.enrollments = new ArrayList<Enrollment>();
         this.attendanceRecords = new ArrayList<Attendance>();
+        this.assignments = new ArrayList<Assignment>();
         course.addSection(this);
         Logger.info("Section initialized: ID=" + this.sectionId + ", Course=" + course.getCourseCode() + ", Capacity=" + this.capacity);
     }
@@ -191,17 +193,33 @@ public class Section {
         Logger.info("Attendance record added for section " + sectionId);
     }
 
+    public List<Attendance> getAttendanceRecords() {
+        return attendanceRecords;
+    }
+
     public List<Attendance> getAttendanceRecordsForStudent(Student student) {
         List<Attendance> matches = new ArrayList<Attendance>();
         if (student == null) {
             return matches;
         }
         for (Attendance record : attendanceRecords) {
-            if (record != null) {
+            if (record != null && record.getStudent() != null
+                    && record.getStudent().getStudentId().equals(student.getStudentId())) {
                 matches.add(record);
             }
         }
         return matches;
+    }
+
+    public List<Assignment> getAssignments() {
+        return assignments;
+    }
+
+    public void addAssignment(Assignment assignment) {
+        if (assignment != null && !assignments.contains(assignment)) {
+            assignments.add(assignment);
+            Logger.info("Assignment " + assignment.getId() + " linked to section " + sectionId);
+        }
     }
 
     public void restoreEnrollment(Enrollment enrollment) throws InvalidUserDataException {
